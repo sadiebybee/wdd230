@@ -1,3 +1,8 @@
+// Display copyright year
+
+
+// Display last modified date
+
 let oLastModif = new Date(document.lastModified);
 document.querySelector("#lastModified").textContent = oLastModif;
 
