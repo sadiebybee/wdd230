@@ -1,57 +1,41 @@
-// Display copyright year
+// ************ Create date and last modified date for the footer ************
+// Display the copyright year
+function getCopyrightYear() {
+    const year = new Date().getFullYear();
+    return `&copy; ${year}`;
+}
+document.getElementById("cYear").innerHTML = getCopyrightYear();
 
+// Display the last modified date of the page
+function getLastModified() {
+    const lastModified = new Date(document.lastModified).toGMTString();
+    return `Last Modified: ${lastModified}`;
+}
+document.getElementById("lastModified").innerHTML = getLastModified();
 
-// Display last modified date
+// ********* Hamburger Menu *********
 
-let oLastModif = new Date(document.lastModified);
-document.querySelector("#lastModified").textContent = oLastModif;
+const hamButton = document.querySelector("#menu");
+const navigation = document.querySelector(".navigation");
 
-const options = {
-    year: "numeric"
-};
-document.querySelector("#yearDate").innerHTML =  new Date().toLocaleDateString("en-US", options);
-
-
-
-//HAMBURGUER BUTTON//
-const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
-
-hamButton.addEventListener('click', () => {
-	navigation.classList.toggle('open');
-	hamButton.classList.toggle('open');
+hamButton.addEventListener("click", () => {
+    navigation.classList.toggle("open");
+    hamButton.classList.toggle("open");
 });
 
+// ********* Page Visits Counter *********
+function updatePageVisitsCounter() {
+    let numVisits = Number(window.localStorage.getItem("numVisitsCounter")) || 0;
+    const visitsDisplay = document.querySelector(".visits");
 
-//Weather API
-const currentTemp = document.querySelector("#current-temp");
-const weatherIcon = document.querySelector("#weather-icon");
-const captionDesc = document.querySelector("figcaption");
-
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=25.68&lon=-100.32&appid=82b9407b7b6d113e077d354c4b29fe74&units=imperial`;
-
-async function apiFetch(){
-    try{
-        const response = await fetch(url);
-        if(response.ok){
-            const data = await response.json();
-            console.log(data); //Testing only
-            displayResults(data); // uncomment when ready
-        } else {
-            throw Error(await response.text());
-        }
-    } catch (error) {
-        console.log(error)
+    // Determine if this is the first visit or display the number of visits.
+    if (numVisits === 0) {
+        visitsDisplay.textContent = `Welcome! This is your first visit.`;
+    } else {
+        visitsDisplay.textContent = numVisits + 1;
     }
-}
 
-function displayResults(data) {
-    currentTemp.innerHTML = `${data.main.temp}&deg;F`;
-    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    let desc = data.weather[0].description;
-    weatherIcon.setAttribute("src",iconsrc);
-    weatherIcon.setAttribute("alt","weather icon");
-    captionDesc.textContent =`${desc}`;
+    // store the new visit count total into localStorage
+    localStorage.setItem("numVisitsCounter", numVisits);
 }
-
-apiFetch();
+updatePageVisitsCounter();

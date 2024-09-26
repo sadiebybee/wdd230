@@ -4,9 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=SUSE&family=Unlock&display=swap');
 
 body {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-template-rows: auto auto 1fr auto;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    line-height: 1.15;
 }
 
 /* Fonts */
@@ -22,6 +24,8 @@ body {
     font-style: normal;
   }
   
+/* Mobile and Large Views ***********************/
+
 header {
     background-color: #4C5B61;
     font-family: "unlock", 'Times New Roman', Times, serif;
@@ -35,7 +39,6 @@ header {
     gap: 20px;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
     color: #D9DBF1;
 }
 
@@ -46,41 +49,161 @@ header {
     justify-content: center;
     align-items: center;
     background-color: #D9DBF1;
-    font-size: 25px;
     color: #fff;
     font-family: "suse", 'Times New Roman', Times, serif;
     margin: 0;
-    padding: 20px;}
+    padding: 20px;
+}
+
+nav a {
+    text-decoration: none;
+
+}
+
+nav a:hover {
+color: #4C5B61;
+}
     
 /* Main content */
 
 main {
-    grid-column: 1 / 3;
-    font-family: "suse", 'Times New Roman', Times, serif;
-}
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;}
 
 h2 {
-    text-align: center;
     font-family: "unlock", 'Times New Roman', Times, serif;
 }
 
+
+
 h3{
-    background-color: #D9DBF1;
-    padding: 1rem;
-    text-align: center;
     font-family: "unlock", 'Times New Roman', Times, serif;
     color: #4C5B61;
+}
+
+.attribute {
+    font-size: 1em;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #4C5B61;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+/* Section Card */
+.card {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px #4C5B61;
+    border-radius: 10px;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #D9DBF1;
+    border-radius: 10px 10px 0 0;
+    justify-content: center;
+}
+
+.card-content {
+    padding: 20px;
+}
+.card-content div{
+    margin: 0 0 10px 0;
+
+}
+
+.la-card {
+    list-style-type: none;
+    padding: 0;
+}
+
+.la-card li {
+    padding: 5px;
+    font-family: "suse", 'Times New Roman', Times, serif;
+    color: #4C5B61;
+}
+
+.la-card li a {
+    font-size: 0.72em;
 }
 
 /* footer section */
 
 footer {
-    grid-column: 1 / 3;
-    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
     background-color: #4C5B61;
-    text-align: center;
-    line-height: 2;
-    color: white;
-    font-size: 15px;
+    color: #ffffff;
+    padding: 25px 50px;
+    margin-top: auto;
     font-family: "suse", 'Times New Roman', Times, serif;
+}
+
+#lastModified {
+    color: yellow;
+}
+
+/* Larger Views ************/
+
+@media only screen and (min-width: 768px) {
+    .navigation {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .navigation ul {
+        display: block;
+        flex: 1 1 100%;
+    }
+}
+
+.la-card li a {
+        font-size: 0.8em;
+        font-family: "suse", 'Times New Roman', Times, serif;
+
+    }
+
+    .attribute {
+        font-size: 1.75em;
+    }
+
+/* Section Card Area */
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: column;
+}
+.card-grid section:nth-child(1) {
+    grid-column: span 2;
+    
+}
+
+footer .footer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media only screen and (min-width: 768px) {
+    .card-grid {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .card-grid ul {
+        display: block;
+        flex: 1 1 100%;
+    }
 }
