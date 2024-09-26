@@ -23,7 +23,7 @@ body {
   }
   
 header {
-    background-color: #D9DBF1;
+    background-color: #4C5B61;
     font-family: "unlock", 'Times New Roman', Times, serif;
     color: #4C5B61;
 }
@@ -36,6 +36,7 @@ header {
     justify-content: center;
     align-items: center;
     font-size: 30px;
+    color: #D9DBF1;
 }
 
 .navigation {
@@ -44,9 +45,9 @@ header {
     list-style: none;
     justify-content: center;
     align-items: center;
-    background-color: #4C5B61;
+    background-color: #D9DBF1;
     font-size: 25px;
-    color: white;
+    color: #fff;
     font-family: "suse", 'Times New Roman', Times, serif;
     margin: 0;
     padding: 20px;}
