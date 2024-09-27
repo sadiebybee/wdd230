@@ -1,0 +1,113 @@
+/* CSS Style Sheet for design-principles.html */
+
+:root {
+    /* color palette for webpage */
+    --primary-color: #4a4e69;
+    --secondary-color: #9a8c98;
+    --accent1-color: #ffffff;
+    --accent2-color: #131515;
+    --accent3-color: #131515;
+    --accent4-color: #131515;
+}
+
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.15;
+    margin: 0;
+    padding: 0;
+}
+
+/* Small View ****************** */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--accent4-color);
+    padding: 25px 50px;
+}
+header h2 {
+    margin: 0.35em 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px 15px;
+    padding: 50px;
+}
+
+/* Section Card Area */
+.card {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px var(--primary-color);
+    border-radius: 10px;
+    background-color: #f2e9e4;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    border-radius: 10px 10px 0 0;
+    justify-content: center;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    padding: 25px 50px;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* Medium View ****************** */
+@media screen and (min-width: 768px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+    main section:nth-child(3) {
+        grid-column: span 2;
+    }
+}
+
+/* Large View ****************** */
+@media screen and (min-width: 992px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    main section:nth-child(3) {
+        grid-column: span 1;
+    }
+}
