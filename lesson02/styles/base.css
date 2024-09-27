@@ -1,12 +1,12 @@
 /* CSS Style Sheet for design-principles.html */
 
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=SUSE:wght@100..800&display=swap');
+
 :root {
     /* color palette for webpage */
     --primary-color: #4a4e69;
     --secondary-color: #9a8c98;
     --accent1-color: #ffffff;
-    --accent2-color: #131515;
-    --accent3-color: #131515;
     --accent4-color: #131515;
 }
 
@@ -17,6 +17,7 @@ body {
     min-height: 100vh;
     background-color: var(--accent1-color);
     color: var(--primary-color);
+    font-family: 'suse', 'Times New Roman', Times, serif;
     font-size: 18px;
     font-weight: 400;
     font-style: normal;
@@ -33,7 +34,7 @@ header {
     justify-content: center;
     text-align: center;
     background-color: var(--primary-color);
-    color: var(--accent4-color);
+    color: var(--accent1-color);
     padding: 25px 50px;
 }
 header h2 {
