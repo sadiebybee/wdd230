@@ -38,17 +38,30 @@ header {
     color: #D9DBF1;
 }
 
+/* Nav Bar */
+
 .navigation {
     display: flex;
     flex-direction: column;
     list-style: none;
-    justify-content: space-evenly;
     align-items: center;
     background-color: #D9DBF1;
     color: #fff;
     font-family: "suse", 'Times New Roman', Times, serif;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation li a {
+    display: block;
+    padding: 1.5rem;
+    text-align: center;
+    text-decoration: none;
 }
 
 nav a {
@@ -57,7 +70,7 @@ nav a {
 }
 
 nav a:hover {
-background-color: #fff;
+color: #4C5B61;
 }
     
 /* Main content */
@@ -115,6 +128,20 @@ h3{
     margin: 0 0 10px 0;
 }
 
+.la-card {
+    list-style-type: none;
+    padding: 0;
+}
+
+.la-card li {
+    padding: 5px;
+    font-family: "suse", 'Times New Roman', Times, serif;
+    color: #4C5B61;
+}
+
+.la-card li a {
+    font-size: 0.72em;
+}
 
 /* footer section */
 
@@ -125,7 +152,7 @@ footer {
     justify-items: center;
     align-items: center;
     background-color: #4C5B61;
-    color: #ffffff;
+    color: #fff;
     padding: 25px 50px;
     margin-top: auto;
     font-family: "suse", 'Times New Roman', Times, serif;
@@ -135,3 +162,44 @@ footer {
     color: yellow;
 }
 
+/* Larger Views ************/
+
+@media only screen and (min-width: 768px) {
+    .navigation {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .navigation ul {
+        display: block;
+        flex: 1 1 100%;
+    }
+}
+
+.la-card li a {
+    font-size: 0.8em;
+    font-family: "suse", 'Times New Roman', Times, serif;
+
+    }
+
+.attribute {
+    font-size: 1.75em;
+}
+
+/* Section Card Area */
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: column;
+}
+.card-grid section:nth-child(1) {
+    grid-column: span 2;
+    
+}
+
+
+footer .footer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
