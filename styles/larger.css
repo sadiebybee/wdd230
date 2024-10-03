@@ -10,19 +10,7 @@
         display: block;
         flex: 1 1 100%;
     }
-    .hero-title {
-        padding: 1rem;
-    }
-    .hero-title p{
-        font-size: 1.25rem;
-    }
-    .la-card li a {
-        font-size: 0.8em;
-    }
 
-    .attribute {
-        font-size: 1.75em;
-    }
 
     /* Section Card Area */
     .card-grid {
@@ -31,9 +19,6 @@
     }
     .card-grid section:nth-child(1) {
         grid-column: span 2;
-    }
-    .map {
-        grid-column: span 3;
     }
     footer .footer-info {
         display: flex;
