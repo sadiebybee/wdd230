@@ -39,20 +39,43 @@ header {
 }
 
 /* Nav Bar */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	color: #fff;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+    background: none;
+}
+    
+#menu::before {
+    font-size: 2rem;
+	content: "☰";
+}
+
+#menu.open::before {
+    font-size: 2rem;
+	content: "🆇";
+}
+
 
 .navigation {
     display: flex;
     flex-direction: column;
     list-style: none;
-    align-items: center;
     background-color: #D9DBF1;
     color: #fff;
     font-family: "suse", 'Times New Roman', Times, serif;
+    font-weight: 600;
     margin: 0;
     padding: 0;
     white-space: nowrap;
 }
 
+.navigation li {
+    display: none;
+}
 
 .navigation li a {
     display: block;
@@ -61,15 +84,25 @@ header {
     text-decoration: none;
 }
 
+.open li {
+    display: block;
+    width: 100%;
+}
+.open li a {
+    display: block;
+}
+
 nav a {
     text-decoration: none;
 
 }
 
 nav a:hover {
-color: #4C5B61;
+    background-color: #eee;
+    color: #4C5B61;
+    font-weight: 700;
 }
-    
+
 /* Main content */
 
 main {
