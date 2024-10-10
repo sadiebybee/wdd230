@@ -177,6 +177,11 @@ h3{
     font-size: 0.72em;
 }
 
+a:active,
+a:link,
+a:visited {
+	color: #4C5B61;
+}
 /* Map */
 .map {
     display: flex;
