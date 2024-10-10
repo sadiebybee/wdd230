@@ -91,7 +91,6 @@ header {
 .open li a {
     display: block;
 }
-
 nav a {
     text-decoration: none;
 
@@ -180,8 +179,13 @@ h3{
 a:active,
 a:link,
 a:visited {
-	color: #4C5B61;
+	color: black;
 }
+
+a:hover {
+    color: purple;
+}
+
 /* Map */
 .map {
     display: flex;
