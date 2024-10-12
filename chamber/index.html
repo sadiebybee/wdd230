@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chamber Home Page</title>
     <meta name="description" content="Farmington Chamber Home Page" />
@@ -12,29 +13,100 @@
     <meta property="og:image" content="">
     <meta property="og:url" content="">
 
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     
 </head>
 <body>
     
-<header>
-    <div id="headertitle">
-        <img src="" alt="">
-        <h1>Farmington Chamber of Commerce</h1>
-        <div id="menu"></div>
-    </div>
+    <header>
+        <div id="headertitle">
+            <img id="headerpicture" src="images/farmingtonicon.jpeg" alt="picture">
+            <h1>Farmington Chamber of Commerce</h1>
+            <div id="menu"></div>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Join</a></li>
+        </nav>
+    </header>
+    <main>
+        <img id="hero-image" src="images/Screenshot 2024-10-11 at 10.22.25 PM.png" alt="picture">
 
-    <nav>
-        <ul class="navigation">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Events</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Join</a></li>
-    </nav>
+        <section class="hero hero-home">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Farmington Chamber of Commerce</h2>
+                    <p>Temp</p>
+                    <a href="" class="button">Join Us</a>
+                </div>
+            </div>
+        </section>
 
-</header>
+        <div class="cards">
+            <section class="card">
+                <div class="card-header">
+                    <h3>Events:</h3>
+                </div>
+                <div class="card-content">
+                </div>
+            </section>
+            <section class="card">
+                <div class="card-header">
+                    <h3>Weather:</h3>
+                </div>
+                <div class="card-content">
+                </div>
+            </section>
+            <section class="card">
+                <div class="card-header">
+                    <h3>Spotlight:</h3>
+                </div>
+                <div class="card-content">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </section> 
+        </div>
+    </main>
+    <footer>
+        <section class="footer">
+            <div class="footer-title">
+                <h2>Farmington Chamber of Commerce</h2>
+            </div>
+            <div class="footer-addr">
+                <h3>Contact</h3>
+                <address>
+                    160 S Main St <br>
+                    Farmington, UT 84025 <br>
+                    <a class="footer-btn" href="">Email Us</a>
+                </address>
+            </div>
+            <div class="footer-nav">
+                <h3>Social Media</h3>
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Twitter</a></li>
+    
+                </ul>
+            </div>
 
+            <div class="legal">
+                <div class="">
+                    <span><span id="cYear">&copy;</span> Farmington Chamber of Commerce | Sadie Bybee | WDD 230 Project</span>
+                </div>
+
+                <p id="lastModified"></p>
+            </div>
+        </section>
+    </footer>
+    <script src="scripts/getdates.js"></script>
 </body>
 </html>
