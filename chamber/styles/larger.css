@@ -10,6 +10,21 @@
         display: block;
         flex: 1 1 100%;
     }
+    #dark {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 3rem;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+    
+    /* Hero Secion */
+
+    .container {
+        top: 1rem;
+        right: 4rem;
+    }
 
     /* Section Card Area */
     .cards {

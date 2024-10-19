@@ -36,6 +36,15 @@ body {
     background-color: white;
 }
 
+#dark {
+	position: absolute;
+	top: 1rem;
+	right: 3rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
+}
+  
 #headerpicture {
     border-radius: 50px;
     height: 100px;
@@ -57,9 +66,11 @@ header {
     gap: 20px;
     justify-content: center;
     align-items: center;
+    font-size: 2rem;
 }
 
 /* Navigation and hambutton */
+
 #menu {
 	font-size: 1.5rem;
 	border: 0;
@@ -184,8 +195,10 @@ main {
 /* Card secition */
 .cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+    flex: 1;
+    max-width: 100%;
 }
 
 /* Section Card */
@@ -206,6 +219,17 @@ main {
     justify-content: center;
 }
 
+.weather-header {
+    display: flex;
+    font-family: var(--heading-font);
+    color: var(--text-color-main);
+    font-size: 25px;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--secondary-color);
+    justify-content: center;
+}
+
 .card-content {
     padding: 20px;
 }
@@ -214,8 +238,18 @@ main {
     padding: 0;
 }
 
+.weather-content {
+    text-align: center;
+}
 
-/* footer section */
+.weather {
+    text-align: center;
+}
+
+#weather-icon{
+    width: 70px;
+}
+
 
 /* *** Footer ************************************ */
 

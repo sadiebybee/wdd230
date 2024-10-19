@@ -19,10 +19,9 @@
     
 </head>
 <body>
-    
     <header>
         <div id="headertitle">
-            <img id="headerpicture" src="#" alt="picture">
+            <img id="headerpicture" src="images/handsicon.png" alt="picture">
             <h1>Farmington Chamber of Commerce</h1>
             <div id="menu"></div>
         </div>
@@ -34,6 +33,11 @@
                 <li><a href="">Join</a></li>
             </ul>
         </nav>
+        
+        <div id="dark">
+            🔲
+        </div>
+        
     </header>
     <main>
         <img id="hero-image" src="images/farmington.webp" alt="picture">
@@ -54,13 +58,25 @@
                     <h3>Events:</h3>
                 </div>
                 <div class="card-content">
+                    <ul>
+                        <li>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.!</li>
+                        <li>Join us for a live performance of The Wizard of Oz at this year's Theater in the Park!</li>
+                    </ul>
                 </div>
             </section>
             <section class="card">
-                <div class="card-header">
+                <div class="weather-header">
                     <h3>Weather:</h3>
                 </div>
-                <div class="card-content">
+                <div class="weather-content">
+                    <h3>Farmington, Utah</h3>
+                </div>
+                <div class="weather">
+                    <h4>Today</h4>
+                    <h4>The current temperature is: <span id="current-temp"></span> </h4>
+                    <figure>
+                        <img id="weather-icon" src="images/weather-icon.webp" alt="Weather Icon">
+                    </figure>
                 </div>
             </section>
             <section class="card">
@@ -109,5 +125,6 @@
         </section>
     </footer>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>

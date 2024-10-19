@@ -22,3 +22,19 @@ hamButton.addEventListener("click", () => {
     navigation.classList.toggle("open");
     hamButton.classList.toggle("open");
 });
+
+// Dark mode section
+const dark = document.querySelector("#dark");
+const main = document.querySelector("main");
+
+dark.addEventListener("click", () => {
+	if (dark.textContent.includes("🔲")) {
+		main.style.background = "#000";
+		main.style.color = "#fff";
+		dark.textContent = "🔳";
+	} else {
+		main.style.background = "#eee";
+		main.style.color = "#000";
+		dark.textContent = "🔲";
+	}
+});
