@@ -176,6 +176,16 @@ h3{
     font-size: 0.72em;
 }
 
+.weather {
+    text-align: center;
+    font-family: "suse", 'Times New Roman', Times, serif;
+}
+
+#weather-icon {
+    margin: 30px;
+    width: 100px;
+}
+
 a:active,
 a:link,
 a:visited {
