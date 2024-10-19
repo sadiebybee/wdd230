@@ -231,11 +231,16 @@ main {
 }
 
 .card-content {
+    text-align: center;
     padding: 20px;
 }
 .card-content div{
     margin: 0;
     padding: 0;
+}
+
+.event-content {
+    font-size: large;
 }
 
 .weather-content {
