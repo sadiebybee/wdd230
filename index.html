@@ -22,7 +22,7 @@
 
     <header>
         <div id="headertitle">
-            <img id="header-picture" src="images/FAR_6808.jpg" alt="picture" width="200">
+            <img id="header-picture" src="images/profilepic.webp" alt="picture" width="200">
             <h1>Sadie Bybee</h1>
             <div id="menu"></div>
         </div>
@@ -39,6 +39,16 @@
     </header>
 
     <main>
+        <section class="hero">
+            <div class="hero-title">
+                <h2>Detroit Michigan Temple</h2>
+            </div>
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)"> 
+                <img src="images/hero-image.webp" alt="Detroit Michigan Temple" width="1500" height="750">
+            </picture>
+        </section>
         <h2 class="attribute">WDD 230: Web Frontend Development</h2>
         <div class="card-grid">
             <section class="card">
@@ -70,7 +80,7 @@
                     <h3>Information</h3>
                 </div>
                 <div class="weather">
-                    <img id="weather-icon" src="images/weathericon1.png" alt="weathericon">
+                    <img id="weather-icon" src="images/weathericon.webp" alt="weathericon">
                     <h4>Today's Weather</h4>
                     <h4>The current temperature is: <span id="current-temp"></span> </h4>
                     <figure>
