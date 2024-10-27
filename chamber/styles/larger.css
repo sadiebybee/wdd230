@@ -3,6 +3,11 @@
     #menu {
         display: none;
     }
+
+    #headertitle {
+        font-size: 2rem;
+    }
+
     .navigation {
         flex-direction: row;
     }

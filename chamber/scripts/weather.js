@@ -6,6 +6,8 @@ function weatherForecast() {
   const apiKey = 'f4619f75c2d45cc1bfe1a55992e82aaa';
 
   const currentTemp = document.querySelector('#current-temp');
+  const feelsLike = document.querySelector("#feels-like");
+  const windSpeed = document.querySelector("#wind-speed");
 
   const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${apiKey}&units=imperial`;
 
@@ -24,7 +26,9 @@ function weatherForecast() {
   }
 
   function displayResults(data) {
-    currentTemp.innerHTML = `${data.main.temp}&deg;C`;
+    currentTemp.innerHTML = `${data.main.temp.toFixed(0)}&deg;F`;
+    feelsLike.innerHTML = `${data.main.feels_like.toFixed(0)}&deg;F`;
+    windSpeed.innerHTML = `${data.wind.speed.toFixed(0)}mph`;
   }
   apiFetch();
 }

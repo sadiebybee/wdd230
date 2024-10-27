@@ -207,6 +207,7 @@ h3{
 }
 
 #weather-icon {
+    border-radius: 50px;
     margin: 30px;
     width: 100px;
 }

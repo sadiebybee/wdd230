@@ -20,7 +20,7 @@
   <body>
     <header>
       <div id="headertitle">
-        <img id="headerpicture" src="images/handsicon.png" alt="picture" />
+        <img id="headerpicture" src="images/handsicon.webp" alt="picture" />
         <h1>Farmington Chamber of Commerce</h1>
         <div id="menu"></div>
       </div>
@@ -36,9 +36,14 @@
       <div id="dark">🔲</div>
     </header>
     <main>
-      <img id="hero-image" src="images/farmington.webp" alt="picture" />
-
-      <section class="hero hero-home">
+      <div class="hero-image">
+        <picture>
+          <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+          <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+          <img src="images/hero-large.webp" alt="Temporary Hero Image" width="1500" height="750">
+        </picture>
+      </div>
+      <section class="hero-home">
         <div class="container">
           <div class="hero-content">
             <h2>Farmington Chamber of Commerce</h2>
@@ -77,6 +82,8 @@
           <div class="weather">
             <h4>Today</h4>
             <h4>The current temperature is: <span id="current-temp"></span></h4>
+            <h4>Feels Like: <span id="feels-like"></span></h4>
+            <h4>Wind: <span id="wind-speed"></span></h4>
             <figure>
               <img
                 id="weather-icon"
