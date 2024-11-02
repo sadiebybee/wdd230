@@ -533,7 +533,7 @@ footer section {
 }
 .style2 {
     background-color: var(--primary-color);
-    color: var(--text-color-secondary);
+    color: var(--accent3-color);
     padding: 20px;
 }
 
