@@ -38,3 +38,20 @@ dark.addEventListener("click", () => {
 		dark.textContent = "🔲";
 	}
 });
+
+// ********* Page Visits Counter *********
+function updatePageVisitsCounter() {
+    let numVisits = Number(window.localStorage.getItem("numVisitsCounter")) || 0;
+    const visitsDisplay = document.querySelector(".visits");
+
+    // Determine if this is the first visit or display the number of visits.
+    if (numVisits === 0) {
+        visitsDisplay.textContent = `Welcome! Let us know if you have any questions.`;
+    } else {
+        visitsDisplay.textContent = numVisits + 1;
+    }
+
+    // store the new visit count total into localStorage
+    localStorage.setItem("numVisitsCounter", numVisits);
+}
+updatePageVisitsCounter();
