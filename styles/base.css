@@ -136,10 +136,13 @@ h3{
     left: 30px;
     background: radial-gradient(#fff, #D9DBF1);
     border: 1px solid #4C5B61;
-    padding: 0.8rem;
     box-shadow: 0 0 3rem #fff;
     opacity: 0.65;
     white-space: nowrap;
+}
+.hero-title h3 {
+    padding: 5px;
+    color: black;
 }
 .hero-title p {
     margin: 0;
