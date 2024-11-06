@@ -380,18 +380,18 @@ footer section {
 }
 
 .style1 {
-    background-color: var(--secondary-color);
-    color: var(--text-color-main);
+    background-color: var(--accent1-color);
+    color: var(--text-color-secondary);
     padding: 20px;
 }
 .style2 {
-    background-color: var(--primary-color);
-    color: black;
+    background-color: var(--accent3-color);
+    color: var(--accent4-color);
     padding: 20px;
 }
 
 .style3 {
-    background-color: var(--accent1-color);
+    background-color: var(--accent2-color);
     color: var(--text-color-secondary);
     padding: 20px;
 }
@@ -430,8 +430,8 @@ footer section {
     flex-direction: column;
 }
 
-.facts h4 {
-    color: var(--accent4-color);
+.facts p {
+    color: black;
 }
 
 .event-card-container {
