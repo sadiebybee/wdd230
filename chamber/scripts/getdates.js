@@ -40,18 +40,22 @@ dark.addEventListener("click", () => {
 });
 
 // ********* Page Visits Counter *********
+// ********* Page Visits Counter *********
 function updatePageVisitsCounter() {
-    let numVisits = Number(window.localStorage.getItem("numVisitsCounter")) || 0;
     const visitsDisplay = document.querySelector(".visits");
+    let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+
 
     // Determine if this is the first visit or display the number of visits.
-    if (numVisits === 0) {
-        visitsDisplay.textContent = `Welcome! Let us know if you have any questions.`;
+    if (numVisits !== 0) {
+        visitsDisplay.textContent = numVisits;
     } else {
-        visitsDisplay.textContent = numVisits + 1;
+        visitsDisplay.textContent = `Welcome! This is your first visit.`;
     }
 
+    numVisits++;
+
     // store the new visit count total into localStorage
-    localStorage.setItem("numVisitsCounter", numVisits);
+    localStorage.setItem("numVisits-ls", numVisits);
 }
 updatePageVisitsCounter();
