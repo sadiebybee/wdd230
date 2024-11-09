@@ -581,6 +581,7 @@ input:required:valid {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 #record h1 {
+    font-family: var(--heading-font);
     text-align: center;
 }
 #record p {
@@ -594,17 +595,18 @@ input:required:valid {
     align-self: center;
 }
 
-button.homeBtn {
-    border: none;
+.homeBtn {
+    font-family: var(--heading-font);
     background-color: var(--primary-color);
     color: var(--text-color-secondary);
     padding: 0.75rem 1.5rem;
     border-radius: 1rem;
     cursor: pointer;
     text-decoration: none;
-}
-
+  }
+  
 .homeBtn:hover {
+    font-family: var(--heading-font);
     background-color: var(--accent1-color);
     cursor: pointer;
 }
