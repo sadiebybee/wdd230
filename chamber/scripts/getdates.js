@@ -59,3 +59,8 @@ function updatePageVisitsCounter() {
     localStorage.setItem("numVisits-ls", numVisits);
 }
 updatePageVisitsCounter();
+
+// Function to set value of hidden input field with current date/time in milliseconds
+function setTimestamp() {
+    document.getElementById("timestampmilli").value = Date.now();
+}
