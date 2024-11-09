@@ -154,19 +154,19 @@ input[name="email"]:required:valid {
     align-self: center;
 }
 
-a button {
-    border: none;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    font-family: var(--paragraph-font);
+.homeBtn {
+    font-family: var(--heading-font);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     padding: 0.75rem 1.5rem;
     border-radius: 1rem;
     cursor: pointer;
     text-decoration: none;
-}
-
-a button:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+  }
+  
+.homeBtn:hover {
+    font-family: var(--heading-font);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     cursor: pointer;
 }
