@@ -40,7 +40,6 @@ dark.addEventListener("click", () => {
 });
 
 // ********* Page Visits Counter *********
-// ********* Page Visits Counter *********
 function updatePageVisitsCounter() {
     const visitsDisplay = document.querySelector(".visits");
     let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
@@ -48,7 +47,7 @@ function updatePageVisitsCounter() {
 
     // Determine if this is the first visit or display the number of visits.
     if (numVisits !== 0) {
-        visitsDisplay.textContent = numVisits;
+        visitsDisplay.textContent = numVisits + " Welcome back!";
     } else {
         visitsDisplay.textContent = `Welcome! This is your first visit.`;
     }
