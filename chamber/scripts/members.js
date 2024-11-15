@@ -2,20 +2,12 @@ const baseURL = "https://sadiebybee.github.io/wdd230/"
 const linksURL = "https://sadiebybee.github.io/wdd230/chamber/data/members.json"
 
 async function getMembers() {
-    try {
-        const response = await fetch(dataURL);
-        if (!response.ok) {
-            throw new Error("Failed to fetch data");
-        }
-        const data = await response.json();
-        // console.log(data);
-        displayMembers(data.members);
-        return data;
-    } catch (error) {
-        console.error("Error fetching data:", error);
-        throw error;
-    }
+    const response = await fetch (membersURL);
+    const data = await response.json();
+    displayMembers(data);
+    console.log(data);
 }
+
 getMembers();
 
 const displayMembers = (members) => {
