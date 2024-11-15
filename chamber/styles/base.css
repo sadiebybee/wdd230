@@ -612,3 +612,141 @@ input:required:valid {
     color: var(--text-color-secondary);
     cursor: pointer;
 }
+
+/**********Directory***********/
+#directory {
+    margin: 2rem;
+    position: relative;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--accent2-color);
+}
+#directory h2 {
+    color: var(--text-color-main);
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0 0 1rem 0;
+    font-family: var(--heading-font);
+}
+.menu {
+    padding: 1rem;
+    text-align: center;
+}
+
+.menu button {
+    font-family: var(--heading-font);
+	padding: 1rem;
+	font-weight: 600;
+    background-color: var(--accent4-color);
+    color: var(--text-color-secondary);
+    border: none;
+    border-radius: 5px;
+}
+
+.menu button:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color-secondary);
+
+}
+.member {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.25rem;
+    padding: 0.35rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    color: var(--text-color-main);
+    height: 310px;
+}
+.member.dark-mode {
+    background-color: #4b5563;
+    color: var(--text-color-secondary);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.7);
+}
+.member.dark-mode img {
+    background-color: var(--text-color-secondary);
+}
+.member h3 {
+    font-size: 1.2rem;
+}
+
+.member p {
+    font-size: 0.75rem;
+}
+
+.member a {
+    font-size: 0.65rem;
+    color: var(--primary-color);
+}
+.member a.dark-mode {
+    background-color: #4b5563;
+    color: var(--text-color-secondary);
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+}
+
+.grid section {
+    text-align: center;
+}
+
+.grid section > * {
+    margin: 0.1rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "title phone"
+        "address1 email"
+        "address2 .";
+    margin: 0;
+    height: auto;
+}
+
+.list section > * {
+    margin: 0 1rem;
+}
+
+.list section img {
+    display: none;
+}
+
+.list section h3 {
+    font-size: 0.75rem;
+    grid-area: title;
+}
+.list section p:nth-of-type(1) {
+    grid-area: address1;
+}
+.list section p:nth-of-type(2) {
+    grid-area: address2;
+}
+.list section p:nth-of-type(3) {
+    grid-area: phone;
+}
+.list section a {
+    grid-area: email;
+}
+
+.list section:nth-child(even) {
+    background-color: #e5e6e7;
+}
+.list section:nth-child(even).dark-mode {
+    color: var(--text-color-main);
+}
+.list section:nth-child(even) a.dark-mode {
+    background-color: #e5e6e7;
+    color: var(--text-color-main);
+}
