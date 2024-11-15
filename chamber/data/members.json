@@ -6,7 +6,7 @@
             "city": "Seattle",
             "state": "Washington",
             "zip": "98109",
-            "phone" : "(206) 266-1000",
+            "phone" : "(206)266-1000",
             "email" : "",
             "website" : "amazon.com",
             "image" : "https://sadiebybee.github.io/wdd230/chamber/images/biz-logos/amazonlogo.jpg",
@@ -23,6 +23,17 @@
             "website": "hellofresh.com",
             "logo": "",
             "membership": "Silver"
-        }
+        },
+        {
+            "name": "Joseph",
+            "lastname": "Smith",
+            "birthdate": "23 December 1805",
+            "death": "27 June 1844",
+            "length": 14,
+            "order": 1,
+            "birthplace": "Vermont",
+            "numofchildren": 11,
+            "imageurl": "https://assets.churchofjesuschrist.org/ec/f8/ecf80a88e31429d0aa0eeec6e2c74851a4bf4235/nauvoo_temple_joseph_art_lds.jpeg"
+          }
     ]
 }

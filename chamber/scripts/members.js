@@ -1,14 +1,14 @@
 const baseURL = "https://sadiebybee.github.io/wdd230/"
-const linksURL = "https://sadiebybee.github.io/wdd230/chamber/data/members.json"
+const membersURL = "https://sadiebybee.github.io/wdd230/chamber/data/members.json"
 
-async function getMembers() {
-    const response = await fetch (membersURL);
+async function getMembersData() {
+    const response = await fetch(url);
     const data = await response.json();
-    displayMembers(data);
-    console.log(data);
+    //console.table(data.prophets);
+    displayMembers(data.members);
 }
-
-getMembers();
+  
+getMembersData();
 
 const displayMembers = (members) => {
     // console.log(members);
