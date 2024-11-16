@@ -73,16 +73,40 @@
             "membership": "Gold"
         },
         {
-            "company": "",
-            "address": "18 W 18th St",
-            "city": "New York",
-            "state": "NY",
-            "zip": "10011",
-            "phone": "(800)206-9413",
-            "email": "",
-            "website": "www.digitalsilk.com",
-            "image": "https://sadiebybee.github.io/wdd230/chamber/images/biz-logos/digitalsilk.jpeg",
+            "company": "Huemor",
+            "address": "420 Perry Highway",
+            "city": "Pittsburgh",
+            "state": "PA",
+            "zip": "15229",
+            "phone": "631-393-6116",
+            "email": "sayhi@huemor.rocks",
+            "website": "www.huemor.rocks.com",
+            "image": "https://sadiebybee.github.io/wdd230/chamber/images/biz-logos/huemor.webp",
             "membership": "Gold"
+        },
+        {
+            "company": "Wells Fargo Bank",
+            "address": "420 Montgomery Street",
+            "city": "San Francisco",
+            "state": "CA",
+            "zip": "94163",
+            "phone": "1-866-878-5865",
+            "email": "",
+            "website": "www.wellsfargo.com",
+            "image": "https://sadiebybee.github.io/wdd230/chamber/images/biz-logos/wellsfargo.png",
+            "membership": "Silver"
+        },
+        {
+            "company": "Raytheon Technologies",
+            "address": "1100 Wilson Blvd",
+            "city": "Arlington",
+            "state": "VA",
+            "zip": "22209",
+            "phone": "(781) 522-3000",
+            "email": "corporatepr@rtx.com",
+            "website": "www.rtx.com",
+            "image": "https://sadiebybee.github.io/wdd230/chamber/images/biz-logos/raytheon.png",
+            "membership": "Bronze"
         }
     ]
 }
