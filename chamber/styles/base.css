@@ -660,14 +660,6 @@ input:required:valid {
     color: var(--text-color-main);
     height: 310px;
 }
-.member.dark-mode {
-    background-color: #4b5563;
-    color: var(--text-color-secondary);
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.7);
-}
-.member.dark-mode img {
-    background-color: var(--text-color-secondary);
-}
 .member h3 {
     font-size: 1.2rem;
 }
@@ -679,10 +671,6 @@ input:required:valid {
 .member a {
     font-size: 0.65rem;
     color: var(--primary-color);
-}
-.member a.dark-mode {
-    background-color: #4b5563;
-    color: var(--text-color-secondary);
 }
 .grid {
     display: grid;
