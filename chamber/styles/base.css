@@ -662,25 +662,19 @@ input:required:valid {
 }
 .member h3 {
     font-family: var(--heading-font);
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--text-color-main);
 }
 
 .member p {
     font-family: var(--paragraph-font);
-    font-size: 1rem;
-    color: var(--primary-color);
+    font-size: 1.5rem;
+    color: var(--text-color-main);
 }
 
 .member a {
     font-family: var(--paragraph-font);
-    font-size: .85rem;
-    color: var(--text-color-main);
-}
-
-.member h5 {
-    font-family: var(--heading-font);
-    font-size: .75rem;
+    font-size: 1rem;
     color: var(--text-color-main);
 }
 

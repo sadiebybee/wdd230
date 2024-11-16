@@ -38,7 +38,7 @@ const displayMembers = (members) => {
         image.setAttribute("width", "75");
         image.setAttribute("height", "auto");
 
-        const membership = document.createElement("h5");
+        const membership = document.createElement("p");
         membership.textContent = member.membership;
 
         bizCard.appendChild(image);
