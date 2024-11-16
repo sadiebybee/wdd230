@@ -38,12 +38,15 @@ const displayMembers = (members) => {
         image.setAttribute("width", "75");
         image.setAttribute("height", "auto");
 
+        const membership = document.createElement("h5");
+        membership.textContent = member.membership;
+
         bizCard.appendChild(image);
         bizCard.appendChild(companyName);
         bizCard.appendChild(address);
-        bizCard.appendChild(address2);
         bizCard.appendChild(phone);
         bizCard.appendChild(website);
+        bizCard.appendChild(membership);
 
         cards.appendChild(bizCard);
     });
