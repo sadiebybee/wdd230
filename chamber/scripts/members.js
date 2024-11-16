@@ -31,14 +31,14 @@ const displayMembers = (members) => {
         website.setAttribute("href", `https://${member.website}`);
         website.textContent = member.website;
 
-        const logo = document.createElement("img");
-        logo.setAttribute("src", member.logo);
-        logo.setAttribute("alt", `${member.company.toLowerCase()}-logo`);
-        logo.setAttribute("loading", "lazy");
-        logo.setAttribute("width", "75");
-        logo.setAttribute("height", "auto");
+        const image = document.createElement("img");
+        image.setAttribute("src", member.image);
+        image.setAttribute("alt", `${member.company.toLowerCase()}-image`);
+        image.setAttribute("loading", "lazy");
+        image.setAttribute("width", "75");
+        image.setAttribute("height", "auto");
 
-        bizCard.appendChild(logo);
+        bizCard.appendChild(image);
         bizCard.appendChild(companyName);
         bizCard.appendChild(address);
         bizCard.appendChild(address2);
