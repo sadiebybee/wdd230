@@ -21,6 +21,18 @@
             "phone": "623-555-7999",
             "email": "",
             "website": "hellofresh.com",
+            "logo": "https://sadiebybee.github.io/wdd230/chamber/images/biz-logos/amazonlogo.jpg",
+            "membership": "Silver"
+        },
+        {
+            "company": "Sub-Zero",
+            "address": "4295 N Cotton Ln",
+            "city": "Goodyear",
+            "state": "AZ",
+            "zip": "85395",
+            "phone": "623-240-4300",
+            "email": "",
+            "website": "www.subzero-wolf.com",
             "logo": "",
             "membership": "Silver"
         }
