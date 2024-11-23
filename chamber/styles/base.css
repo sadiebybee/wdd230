@@ -141,6 +141,39 @@ main {
     margin: 0;
     padding: 20px;
 }
+
+/**********Banner*********/
+.announcement-banner {
+    text-align: center;
+    border: .5rem solid black;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    border-color: var(--accent4-color);
+    margin: 30px;
+    padding: 50px;
+}
+
+.announcement-banner h3 {
+    font-family: var(--heading-font);
+    font-size: 3rem;
+    color: var(--text-color-main);
+}
+
+.close-button {
+    padding: 10px;
+    font-family: var(--heading-font);
+    font-size: 1rem;
+    background-color: var(--accent4-color);
+    border: .5rem solid none;
+    border-radius: 10px;
+    color: var(--text-color-secondary);
+}
+
+.close-button:hover {
+    font-size: 1.2rem;
+   background-color: var(--text-color-main);
+}
+
 /* Hero section */
 .hero-home {
     padding: 50px 0;
