@@ -78,8 +78,8 @@ function isBannerDay() {
   }
   
   document.addEventListener("DOMContentLoaded", function () {
-    if (isBannerDay()) {
-      const banner = document.getElementById("announcementBanner");
-      banner.style.display = "flex";
-    }
+    if (isBannerDay === 1 || isBannerDay === 2 || isBannerDay === 3) {
+        const banner = document.getElementById("announcementBanner");
+        banner.style.display = "flex";
+      }      
   });
