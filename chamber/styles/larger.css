@@ -22,14 +22,7 @@
         font-size: 3rem;
         cursor: pointer;
         font-size: 2rem;
-    }
-    
-    /* Hero Secion */
-
-    .container {
-        top: 1rem;
-        right: 4rem;
-    }
+    }        
 
     /* Section Card Area */
     .cards {
@@ -46,6 +39,41 @@
         justify-content: space-between;
     }
 }
+
+/********* HERO CONTENT ****************/
+@media only screen and (min-width: 1001px) {
+    .hero {
+        position: relative;
+    }
+    .hero img {
+        width: 100%;
+        height: 750px;
+        margin-bottom: 30px;
+    }
+    .hero-content1 {
+        position: absolute;
+        margin: 255px;
+        text-align: center;
+        background-color: var(--primary-color);
+        border-radius: 10px;
+        padding: 20px;
+    }
+    .hero-content1 h2 {
+        font-family: var(--heading-font);
+        font-size: 3em;
+        font-weight: 800;
+        color: var(--accent3-color);
+        margin: 30px;
+    }
+    .hero-content1 p {
+        color: var(--text-color-main);
+        font-size: 1.5em;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+}
+
 
 /***********Discover Page Large*********/
 @media only screen and (min-width: 768px) {
