@@ -580,12 +580,14 @@ input:required:valid {
 
 /*----------- Thankyou.html - Form conformation page --------------*/
 
-.container {
+.thanks-container {
     max-width: 700px;
+    align-items: center;
+    justify-content: center;
     background-color: var(--secondary-color);
     color: var(--text-color-main);
-    margin-top: 200px;
-    padding: 20px;
+    margin: 200px auto;
+    padding: 30px;
     border-radius: 5px;
     box-shadow: 0 0 20px var(--accent1-color);
 }
@@ -603,7 +605,6 @@ p {
     font-family: var(--heading-font);
     background-color: var(--accent1-color);
     color: var(--text-color-secondary);
-    font-size: 1rem;
     padding: .7rem;
     border-radius: 7px;
     text-decoration: none;
