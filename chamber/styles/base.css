@@ -367,6 +367,8 @@ footer h3 {
 
 /* Discover Mobile Views ********/
 .hero-content h4 {
+
+font-family: var(--heading-font);
     color: var(--text-color-secondary);
 }
 
@@ -580,49 +582,39 @@ input:required:valid {
 
 /*----------- Thankyou.html - Form conformation page --------------*/
 
-#record .container {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: var(--success-background);
-    border-color: var(--success-border);
-    color: var(--success-text);
+.container {
+    max-width: 700px;
+    background-color: var(--secondary-color);
+    color: var(--text-color-main);
+    margin-top: 200px;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px var(--accent1-color);
 }
-#record h1 {
+h1 {
     font-family: var(--heading-font);
     text-align: center;
 }
-#record p {
+p {
+    font-family: var(--paragraph-font);
+    color: var(--text-color-main);
     text-align: center;
-}
-#timestamp {
-    font-size: 0.75em;
-}
-
-#record a {
-    align-self: center;
 }
 
 .homeBtn {
     font-family: var(--heading-font);
-    background-color: var(--accent3-color);
-    color: var(--accent4-color);
-    font-size: 1.5rem;
-    padding: 0.75rem 1.5rem;
-    border-radius: 1rem;
-    cursor: pointer;
+    background-color: var(--accent1-color);
+    color: var(--text-color-secondary);
+    font-size: 1rem;
+    padding: .7rem;
+    border-radius: 7px;
     text-decoration: none;
   }
   
 .homeBtn:hover {
     font-family: var(--heading-font);
-    background-color: var(--accent1-color);
+    background-color: var(--accent2-color);
     color: var(--text-color-secondary);
-    cursor: pointer;
 }
 
 /**********Directory***********/
