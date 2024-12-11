@@ -582,8 +582,6 @@ input:required:valid {
 
 .thanks-container {
     max-width: 700px;
-    align-items: center;
-    justify-content: center;
     background-color: var(--secondary-color);
     color: var(--text-color-main);
     margin: 200px auto;
@@ -601,20 +599,6 @@ p {
     text-align: center;
 }
 
-.homeBtn {
-    font-family: var(--heading-font);
-    background-color: var(--accent1-color);
-    color: var(--text-color-secondary);
-    padding: .7rem;
-    border-radius: 7px;
-    text-decoration: none;
-  }
-  
-.homeBtn:hover {
-    font-family: var(--heading-font);
-    background-color: var(--accent2-color);
-    color: var(--text-color-secondary);
-}
 
 /**********Directory***********/
 #directory {
