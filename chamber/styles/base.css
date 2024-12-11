@@ -163,7 +163,7 @@ main {
    background-color: var(--text-color-main);
 }
 
-/* Hero Section Main Page*/
+/* Hero Section*/
 .hero {
     position: relative;
 }
@@ -207,8 +207,6 @@ main {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    display: grid;
-    place-items: center;
 }
 
 .hero-content {
@@ -251,7 +249,6 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 25px;
-    flex: 1;
     max-width: 100%;
 }
 
@@ -263,17 +260,6 @@ main {
 }
 
 .card-header {
-    display: flex;
-    font-family: var(--heading-font);
-    color: var(--text-color-main);
-    font-size: 25px;
-    flex-direction: row;
-    align-items: center;
-    background-color: var(--secondary-color);
-    justify-content: center;
-}
-
-.weather-header {
     display: flex;
     font-family: var(--heading-font);
     color: var(--text-color-main);
@@ -297,16 +283,29 @@ main {
     font-size: large;
 }
 
-.weather-content {
-    text-align: center;
+/********** Weather Section ***********************/
+.weather-card {
+    margin-top: 20px;
+    border: solid 2px #651717;
+
+}
+.weather-header {
+    display: flex;
+    flex-direction: row;
+    font-family: var(--heading-font);
+    color: var(--text-color-main);
+    font-size: 25px;
+    background-color: var(--secondary-color);
+    justify-content: center;
 }
 
 .weather {
     text-align: center;
+    padding: 20px;
 }
 
-#weather-icon{
-    width: 70px;
+.weather h4 {
+    font-family: var(--heading-font);
 }
 
 
@@ -319,7 +318,6 @@ footer section {
 }
 
 .footer-title {
-    line-height: 1rem;
     text-align: center;
     font-family: var(--heading-font);
     font-size: 1rem;
