@@ -610,12 +610,14 @@ input:required:valid {
     box-shadow: 0 0 20px var(--accent1-color);
 }
 .thanks-container a {
-    margin: 285px;
+    margin: 100px;
 }
+
 h1 {
     font-family: var(--heading-font);
     text-align: center;
 }
+
 .thanks-container p {
     font-family: var(--paragraph-font);
     text-align: center;
