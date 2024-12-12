@@ -29,9 +29,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    .card section:nth-child(1) {
-        grid-column: span 2;
-    }
 
     /************WEATHER***************/
     .weather {
@@ -127,6 +124,11 @@
         font-style: italic;
         color: black;
     }
+
+    .style2 h2 {
+        font-size: 2rem;
+    }
+
     .style3 .explore-img {
         width: 100%;
         height: auto;
@@ -142,7 +144,7 @@
         align-items: center;
     }
     .facts h4 {
-        font-size: 0.9em;
+        font-size: 1.5em;
         font-weight: 700;
         color: var(--accent4-color);
         text-align: center;

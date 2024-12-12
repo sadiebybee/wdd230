@@ -256,7 +256,7 @@ main {
 .card {
     display: flex;
     flex-direction: column;
-    border: solid 2px #651717;
+    border: solid 2px var(--accent4-color);
 }
 
 .card-header {
@@ -271,16 +271,15 @@ main {
 }
 
 .card-content {
+    font-family: var(--heading-font);
     text-align: center;
     padding: 20px;
 }
-.card-content div{
-    margin: 0;
-    padding: 0;
-}
 
-.event-content {
-    font-size: large;
+.event-content p {
+    font-family: var(--heading-font);
+    padding: 10px;
+    border-bottom: 1px solid var(--accent1-color);
 }
 
 /********** Weather Section ***********************/
@@ -365,8 +364,7 @@ footer h3 {
 
 /* Discover Mobile Views ********/
 .hero-content h4 {
-
-font-family: var(--heading-font);
+    font-family: var(--heading-font);
     color: var(--text-color-secondary);
 }
 
@@ -375,16 +373,19 @@ font-family: var(--heading-font);
     grid-template-columns: 1fr;
     padding: 50px 0;
 }
+
 .picture {
     align-items: center;
     padding: 10px;
 }
+
 .picture img {
     width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+
 .picture figcaption {
     font-size: 0.8em;
     font-style: italic;
@@ -396,10 +397,19 @@ font-family: var(--heading-font);
     color: var(--text-color-secondary);
     padding: 20px;
 }
+
+.style1 p {
+    color: var(--text-color-secondary);
+}
+
 .style2 {
     background-color: var(--accent3-color);
     color: var(--accent4-color);
     padding: 20px;
+}
+
+.style2 h2{
+    color: var(--accent4-color);
 }
 
 .style3 {
@@ -407,6 +417,7 @@ font-family: var(--heading-font);
     color: var(--text-color-secondary);
     padding: 20px;
 }
+
 .style3 .explore-img {
     width: 88%;
     height: auto;
@@ -416,6 +427,11 @@ font-family: var(--heading-font);
     align-items: center;
     gap: 5px;
 }
+
+.style3 p {
+    color: var(--text-color-secondary);
+}
+
 .style4 {
     background-color: var(--accent3-color);
     color: var(--text-color-main);
@@ -440,6 +456,10 @@ font-family: var(--heading-font);
 .facts {
     display: flex;
     flex-direction: column;
+}
+
+.facts h4 {
+    font-size: 1rem;
 }
 
 .facts p {
@@ -596,10 +616,10 @@ h1 {
     font-family: var(--heading-font);
     text-align: center;
 }
-p {
+.thanks-container p {
     font-family: var(--paragraph-font);
-    color: var(--text-color-main);
     text-align: center;
+    color: var(--text-color-main);
     margin-bottom: 30px;
 }
 
