@@ -17,7 +17,6 @@ async function apiFetchWeather() {
         const response = await fetch(urlCurrent);
         if (response.ok) {
             const data = await response.json();
-            console.log(data); // for testing only
             displayResults(data); // Display current weather results
         } else {
             throw Error(await response.text());
@@ -45,7 +44,6 @@ async function apiFetchForecast() {
         const response = await fetch(urlForecast);
         if (response.ok) {
             const data = await response.json();
-            console.log(data); // for testing only
             displayForecast(data); // Display 3-day forecast
         } else {
             throw Error(await response.text());
