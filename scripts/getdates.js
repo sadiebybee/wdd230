@@ -39,7 +39,6 @@ async function apiFetcch() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data); // for testing only
             displayResults(data); //uncomment when ready
         } else {
             throw Error(await response.text());
