@@ -87,7 +87,7 @@ main h2{
 .la-card li {
     padding: 5px;
     font-family: var(--paragraph-font);
-    color: #4C5B61;
+    color: var(--text-color);
 }
 
 .la-card li a {
