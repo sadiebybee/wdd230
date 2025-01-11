@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Faculty+Glyphic&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Diplomata+SC&family=Faculty+Glyphic&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Langar&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-color: #C8B8DB;
+    --secondary-color: #502F4C;
+    --accent1-color: #2A132F;
+    --accent2-color: #F9F4F5;
+    --text-color: #000000;
+
+    --heading-font: 'Langar', serif;
+    --paragraph-font: 'Poppins', Helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--primary-color);
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+}
+
+.picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture h1 {
+    font-size: 3rem;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    list-style: none;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    
+}
+
+nav a {
+    color: var(--accent2-color);
+    text-decoration: none;
+}
+
+main h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    padding: 10px;
+    border-bottom: 1px solid var(--text-color);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--accent1-color);
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.la-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+.la-card li {
+    padding: 5px;
+    font-family: var(--paragraph-font);
+    color: #4C5B61;
+}
+
+.la-card li a {
+    text-decoration: none;
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+}
+
+#lastModified {
+    color: yellow;
+}

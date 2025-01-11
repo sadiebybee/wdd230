@@ -12,8 +12,10 @@
 </head>
 <body>
     <header>
-        <img src="images/profilepic.webp" alt="picture" width="200">
-        <h1>Sadie Bybee</h1>
+        <div class="picture">
+            <img src="images/profilepic.webp" alt="picture" width="200">
+            <h1>Sadie Bybee</h1>    
+        </div>
 
         <nav>
             <ul>
@@ -28,18 +30,36 @@
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card">
-            <h3>Learning Activities</h3>
-            <ul>
-                <li><a href="#">Week01</a></li>
-            </ul>
+            <div class="card-header">
+                <h3>Learning Activities</h3>
+            </div>
+            <div class="card-content">
+                <ul class="la-card">
+                    <li>01: <a href="#">Holy Grail</a></li>
+                    <li>02: <a href="#"></a></li>
+                    <li>03: <a href="#"></a></li>
+                    <li>04: <a href="#"></a></li>
+                    <li>05: <a href="#"></a></li>
+                    <li>06: <a href="#"></a></li>
+                    <li>07: <a href="#"></a></li>
+                    <li>08: <a href="#"></a></li>
+                    <li>09: <a href="#"></a></li>
+                    <li>10: <a href="#"></a></li>
+                </ul>    
+            </div>
         </section>
-        <section>
-            <h3>Information</h3>
-            <h4>Today's Weather:</h4>
+        <section class="card">
+            <div class="card-header">
+                <h3>Information</h3>
+            </div>
+            <div class="weather">
+                <h4>Today's Weather</h4>
+                <h4>The current temperature is:</h4>
+            </div>
         </section>
     </main>
     <footer>
-        <p>&copy2025 | Sadie Bybee | Farmington, Utah</p>
+        <p><span id="cYear"></span> | Sadie Bybee | Farmington, Utah</p>
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getdates.js"></script>
