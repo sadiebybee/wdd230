@@ -74,7 +74,6 @@ main {
 .card {
     display: flex;
     flex-direction: column;
-    border: 1px solid var(--accent1-color);
     border-radius: 10px;
     box-shadow: 6px 6px 10px #666;
 }
