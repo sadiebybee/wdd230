@@ -18,21 +18,16 @@ header {
     color: var(--accent1-color);
 }
 
-.picture {
+#headertitle {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.picture h1 {
-    font-size: 3rem;
+    flex-direction: row;
     padding: 20px;
-    display: flex;
+    gap: 20px;
     justify-content: center;
     align-items: center;
 }
 
-nav ul {
+.navigation {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,8 +35,8 @@ nav ul {
     font-size: 1.5rem;
     list-style: none;
     background-color: var(--secondary-color);
+    color: var(--accent2-color);
     padding: 10px;
-    
 }
 
 nav a {

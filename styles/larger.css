@@ -1,0 +1,14 @@
+/********Large View Home Page************/
+@media only screen and (min-width:768px) {
+    #headertitle h1 {
+        font-size: 3rem;
+    }    
+    .navigation {
+        flex-direction: row;
+        text-align: center;
+    }
+    .navigation li {
+        display: block;
+        flex: 100%;
+    }
+}
