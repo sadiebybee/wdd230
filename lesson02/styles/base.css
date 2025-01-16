@@ -1,7 +1,6 @@
 /* CSS Style Sheet for design-principles.html */
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=SUSE:wght@100..800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Diplomata+SC&family=Faculty+Glyphic&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Langar&family=Limelight&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
     /* color palette for webpage */
     --primary-color: #3e5c76;
@@ -17,7 +16,6 @@ body {
     min-height: 100vh;
     background-color: var(--accent1-color);
     color: var(--primary-color);
-    font-family: 'suse', 'Times New Roman', Times, serif;
     font-size: 18px;
     font-weight: 400;
     font-style: normal;
@@ -33,6 +31,7 @@ header {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    font-family: 'Limelight', 'Times New Roman', Times, serif;
     background-color: var(--primary-color);
     color: var(--accent1-color);
     padding: 25px 50px;
@@ -65,10 +64,16 @@ main {
     color: var(--accent1-color);
     border-radius: 10px 10px 0 0;
     justify-content: center;
+    font-family: 'Limelight', 'Times New Roman', Times, serif;
 }
 
 .card-content {
     padding: 20px;
+}
+
+.card-content h2 {
+    font-family: 'Limelight', 'Times New Roman', Times, serif;
+
 }
 
 .responsive-image {
