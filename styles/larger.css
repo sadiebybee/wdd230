@@ -24,4 +24,8 @@
     .card-grid section:nth-child(1) {
         grid-column: span 2;
     }
+
+    .map {
+        grid-column: span 3;
+    }
 }

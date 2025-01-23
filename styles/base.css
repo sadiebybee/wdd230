@@ -93,6 +93,7 @@ main {
     padding: 20px;
 }
 
+
 .attribute{
     text-align: center;
     font-family: var(--heading-font);
@@ -147,6 +148,20 @@ main {
 text-align: center;
 }
 
+/* Map */
+.map {
+    display: flex;
+    border: 1px solid var(--accent1-color);
+    border-radius: 10px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+}
+
+/************Footer************/
 footer {
     display: flex;
     flex-direction: column;
