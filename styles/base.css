@@ -31,6 +31,26 @@ header {
     align-items: center;
 }
 
+/*********Nav***********/
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    color: var(--accent2-color);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+}
+#menu::before {
+    font-size: 2rem;
+	content: "☰";
+}
+
+#menu.open::before {
+    font-size: 2rem;
+	content: "🅇";
+}
+
 .navigation {
     display: flex;
     flex-direction: column;
@@ -40,10 +60,28 @@ header {
     list-style: none;
     background-color: var(--secondary-color);
     color: var(--accent2-color);
-    padding: 10px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation li a {
+    display: block;
+    padding: 1.5rem;
+    text-decoration: none;
+}
+
+.open li {
+    display: block;
+    width: 100%;
+}
+.open li a {
+    display: block;
 }
 
 nav a {
+    text-align: center;
     color: var(--accent2-color);
     text-decoration: none;
 }

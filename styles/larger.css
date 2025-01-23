@@ -2,7 +2,12 @@
 @media only screen and (min-width:768px) {
     #headertitle h1 {
         font-size: 3rem;
-    }    
+    }
+    
+    #menu {
+        display: none;
+    }
+    
     .navigation {
         flex-direction: row;
         text-align: center;
