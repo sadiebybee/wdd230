@@ -36,9 +36,9 @@ header {
     font-size: 1.5rem;
     border: 0;
     color: var(--accent2-color);
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
+    position: relative;
+    top: -4rem;
+    right: -1rem;
     background: none;
 }
 #menu::before {
