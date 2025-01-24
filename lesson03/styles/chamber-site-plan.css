@@ -126,17 +126,17 @@ section {
 }
 .secondary {
     background-color: var(--secondary-color);
-    color: var(--text-color-secondary);
+    color: var(--text-color-main);
 }
 .accent1 {
     background-color: var(--accent1-color);
-    color: var(--text-color-secondary);
+    color: var(--text-color-main);
 }
 .accent2 {
     background-color: var(--accent2-color);
-    color: var(--text-color-secondary);
+    color: var(--text-color-main);
 }
 .accent3 {
     background-color: var(--accent3-color);
-    color: var(--text-color-secondary);
+    color: var(--text-color-main);
 }
