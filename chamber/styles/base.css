@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chango&family=Diplomata+SC&family=Faculty+Glyphic&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Langar&family=Limelight&family=Lora:ital,wght@0,400..700;1,400..700&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');/* CSS Style Sheet for chamber-site-plan.html for wdd 230 vern wolfley*/
+
+:root{
+    --primary-color: #ce796b;
+    --secondary-color: #c18c5d;
+    --accent1-color: #e7ad99;
+    --accent2-color: #495867;
+    --accent3-color: #ecc8af;
+
+    --main-text-font: black;
+    --secondary-text-font: white;
+
+    --heading-font: "Chango", sans-serif;
+    --paragraph-font: "Newsreader", serif;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+#headerpicture {
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
+}
+
+header {
+    padding: 1em;
+    text-align: center;
+    font-family: var(--heading-font);
+    color: var(--text-color-main);
+    background-color: var(--primary-color);
+}
+
+#headertitle {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Navigation and hambutton */
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	color: var(--accent3-color);
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+    background: none;
+}
+    
+#menu::before {
+    font-size: 2rem;
+	content: "☰";
+}
+
+#menu.open::before {
+    font-size: 2rem;
+	content: "🅧";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-family: var(--heading-font);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation li a {
+    display: block;
+    padding: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.open li {
+    display: block;
+    width: 100%;
+}
+
+.open li a {
+    display: block;
+}
+
+nav a {
+    color: var(--accent3-color);
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--accent2-color);
+    color: var(--accent3-color);
+    border-radius: 10px;
+}
