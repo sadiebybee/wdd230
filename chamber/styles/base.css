@@ -4,7 +4,7 @@
     --primary-color: #ce796b;
     --secondary-color: #c18c5d;
     --accent1-color: #e7ad99;
-    --accent2-color: #495867;
+    --accent2-color: #003049;
     --accent3-color: #ecc8af;
 
     --main-text-font: black;
@@ -118,7 +118,7 @@ main {
 
 /* Hero Section*/
 .hero {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     padding: 20px;
     border-radius: 10px;
 }
@@ -130,19 +130,51 @@ main {
 }
 
 .hero-content h2 {
-    color: var(--accent2-color);
+    color: var(--accent3-color);
     font-size: 1.5rem;
     font-family: var(--heading-font);
     text-align: center;
 }
 
 .hero-content p {
-    font-size: 1.2rem;
+    text-align: center;
+    color: var(--accent2-color);
+    font-size: 1.3rem;
     
 }
 
-/* *** Footer ************************************ */
+.hero-content a {
+    background-color: var(--accent1-color);
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+    margin: 0;
+    padding: 10px 40px;
+    text-decoration: none;
+    border-radius: 5px;
+}
 
+.hero-content a:hover {
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+    font-size: 1.3rem;
+}
+
+/* Card secition */
+.card-header {
+    display: flex;
+    font-family: var(--heading-font);
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    font-size: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid var(--accent2-color);
+}
+
+
+/* *** Footer ************************************ */
 footer {
     background-color: var(--accent2-color);
     color: var(--text-color-secondary);
@@ -150,18 +182,12 @@ footer {
 }
 
 .footer-title {
-    text-align: center;
     font-family: var(--heading-font);
-    font-size: 1rem;
     color: var(--accent1-color);
-}
-
-footer h2 {
     font-family: var(--heading-font);
     text-align: center;
-    line-height: .5rem;
-}
 
+}
 
 .legal {
     color: var(--accent3-color);
