@@ -15,4 +15,13 @@
         display: block;
         flex: 1 1 100%;
     }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1.3rem;
+    }
+
 }
