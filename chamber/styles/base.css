@@ -202,6 +202,7 @@ footer {
 
 .contact a:hover {
     color: var(--secondary-color);
+    font-size: 1.3rem;
 }
 
 .legal {
