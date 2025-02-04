@@ -19,6 +19,15 @@ body {
     background-color: white;
 }
 
+#dark {
+	position: absolute;
+	top: 1rem;
+	right: 3rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
+}
+
 #headerpicture {
     border-radius: 50px;
     height: 100px;
