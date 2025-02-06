@@ -163,7 +163,6 @@ main {
 .hero-content a:hover {
     background-color: var(--accent1-color);
     color: var(--accent2-color);
-    font-size: 1.3rem;
 }
 
 /* Card secition */
