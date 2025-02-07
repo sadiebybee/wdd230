@@ -28,4 +28,9 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    .card {
+        margin: 5px;
+        box-shadow: 6px 6px 10px #666;
+    }
 }
