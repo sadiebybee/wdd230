@@ -98,6 +98,32 @@ main {
     padding: 20px;
 }
 
+/**********Hero Section**************/
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.heroTitle {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: radial-gradient(#fff, #C8B8DB);
+    border: 1px solid #2A132F;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.65;
+    white-space: nowrap;
+}
+
+.heroTitle h3 {
+    font-family: var(--heading-font);
+    padding: 5px;
+    color: #2A132F;
+}
 
 .attribute{
     text-align: center;
