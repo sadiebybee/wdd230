@@ -79,8 +79,26 @@
                 </div>
                 <div class="weather">
                     <h4>Today's Weather</h4>
-                    <h4>The current temperature is:</h4>
+                    <h4>The current temperature is: <span id="temperature"></span>°F</h4>
+                    <h4>Wind: <span id="wind-speed"></span> mph</h4>
+                    <h4>Wind Chill: <span id="wind-chill"></span></h4>
                 </div>
             </section>
-        <div class="map">
-            <iframe src="https:/
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38203.62003739448!2d-111.90615094064823!3d40.98533387109285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752fee1d35aba5f%3A0xf80d7f9fc1798aae!2sFarmington%2C%20UT!5e0!3m2!1sen!2sus!4v1727977075532!5m2!1sen!2sus"></iframe>
+            </div>       
+        </div>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <div class="copyright">
+                <p><span id="cYear"></span> | Sadie Bybee | Farmington Utah, USA</p>
+            </div>
+        </div>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/links.js"></script>
+</body>
+</html>
