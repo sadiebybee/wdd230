@@ -234,4 +234,6 @@ footer {
 }
 
 #lastModified {
-    te
+    text-align: center;
+    color: var(--secondary-color);
+}
