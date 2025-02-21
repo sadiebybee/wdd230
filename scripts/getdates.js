@@ -30,3 +30,23 @@ hamButton.addEventListener("click", () => {
     navigation.classList.toggle("open");
     hamButton.classList.toggle("open");
 });
+
+// ********* Page Visits Counter *********
+function updatePageVisitsCounter() {
+    const visitsDisplay = document.querySelector(".visits");
+    let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+
+
+    // Determine if this is the first visit or display the number of visits.
+    if (numVisits !== 0) {
+        visitsDisplay.textContent = numVisits;
+    } else {
+        visitsDisplay.textContent = `Welcome! This is your first visit.`;
+    }
+
+    numVisits++;
+
+    // store the new visit count total into localStorage
+    localStorage.setItem("numVisits-ls", numVisits);
+}
+updatePageVisitsCounter();
