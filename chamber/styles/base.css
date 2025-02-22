@@ -129,16 +129,17 @@ main {
 }
 
 .hero {
-    background-color: var(--secondary-color);
-    margin-bottom: 20px;
     padding: 20px;
-    border-radius: 10px;
 }
 
 .hero-content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--secondary-color);
+    padding: 15px;
+    border-radius: 10px;
+
 }
 
 .hero-content h2 {
@@ -236,4 +237,105 @@ footer {
 #lastModified {
     text-align: center;
     color: var(--secondary-color);
+}
+
+/******** Discover Mobile Views ********/
+.hero-content h4 {
+    font-size: 1.5rem;
+    color: var(--text-color-main);
+}
+
+.wrapper {
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    padding: 50px 0;
+}
+
+.picture {
+    align-items: center;
+    padding: 10px;
+}
+
+.picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.picture figcaption {
+    font-size: 0.8em;
+    font-style: italic;
+    color: black;
+}
+
+.style1 {
+    background-color: var(--accent1-color);
+    color: var(--main-text-color);
+    padding: 20px;
+}
+
+.style2 {
+    background-color: var(--accent3-color);
+    color: var(--main-text-color);
+    padding: 20px;
+}
+
+.style3 {
+    background-color: var(--accent2-color);
+    color: var(--secondary-text-color);
+    padding: 20px;
+}
+
+.style3 .explore-img {
+    width: 88%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;    
+    align-items: center;
+    gap: 5px;
+}
+
+.style4 {
+    background-color: var(--secondary-color);
+    color: var(--main-text-color);
+    padding: 20px;
+}
+.style5 {
+    background-color: #f8fafc;
+    color: var(--main-text-color);
+    padding: 20px;
+}
+.fun-facts {
+    color: var(--accent4-color);
+}
+
+.facts {
+    display: flex;
+    flex-direction: column;
+}
+
+.facts h4 {
+    font-size: 1rem;
+}
+
+.event-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.event-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 darkgray;
+    background-color: #ffffff;
+}
+.event-card h3 {
+    margin: 0 0 5px 0;
+}
+.event-card p {
+    font-size: 0.7em;
+    margin: 0;
 }
