@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development, Form Build" />
+    <meta name="author" content="Sadie Bybee" />
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <div id="headertitle">
+            <img id="header-picture" src="images/profilepic.webp" alt="picture" width="200">
+            <h1>Sadie Bybee</h1>
+            <div id="menu"></div>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="">Home</a></li>
+                <li><a href="lesson03/chamber-site-plan.html" target="_blank">Site Plan</a></li>
+                <li><a href="chamber/index.html" target="_blank">Chamber</a></li>
+                <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng" target="_blank">Scripture</a></li>
+                </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="formmessage" class="" role="alert"></div>
+        <form method="get" action="record.html" class="wf1">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label>Username* <input type="text" id="name" name="username" required></label>
+                <label>Password* <input type="password" id="password" name="password" pattern="[A-Za-z]{8}" placeholder="At least eight characters." required></label>
+                <label>Re-enter Password* <input type="password" id="password2" name="password2" pattern="[A-Za-z]{8}" placeholder="At least eight characters." required></label>
+                <label>Email* <input type="email" id="email" name="email" placeholder="someone@byui.edu" pattern="[a-zA-Z0-9_.\-]+@byui.edu" title="Please enter a valid email address" required></label>
+                <label>Page Rating</label>
+                <div id="rangevalue">1</div>
+                <input type="range" id="rating" name="rating" min="1" max="10" value="1" step="1" list="rangevalues" />
+                <datalist id="rangevalues">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>            </fieldset>
+            <div id="submitmessage" class="hide" role="alert"></div>
+            <input class="submitBtn" type="submit" onclick="validateForm(event)" value="Submit Applicant Request" />
+        </form>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <div class="copyright">
+                <p><span id="cYear"></span> | Sadie Bybee | Farmington Utah, USA</p>
+            </div>
+        </div>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+</html>

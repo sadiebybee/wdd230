@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Faculty+Glyphic&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Diplomata+SC&family=Faculty+Glyphic&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Langar&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* Color Palette */
+    --primary-color: #C8B8DB;
+    --secondary-color: #502F4C;
+    --accent-color: black;
+    
+    --success-text: #3c763d;
+    --success-background: #dff0d8;
+    --success-border: #d6e9c6;
+
+    --error-text: #a94442;
+    --error-background: #f2dede;
+    --error-border: #ebccd1;
+
+    /* typography */
+    --heading-font: 'Langar', serif;
+    --paragraph-font: 'Poppins', Helvetica, sans-serif;
+}
+
+/*----------- FORM STYLING --------------*/
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--paragraph-font);
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+}
+.wf1 fieldset {
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 0.5rem 5%;
+}
+.wf1 legend {
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+}
+.wf1 label {
+    display: block;
+    padding-top: 1rem;
+    color: var(--accent-color);
+}
+input.submitBtn {
+    border: none;
+    background-color: var(--secondary-color);
+    color: white;
+    font-family: var(--heading-font);
+    padding: 0.75rem 1.5rem;
+    border-radius: 1rem;
+    margin: 10px 0 2rem 2%;
+}
+input.submitBtn:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+input:required {
+    border-left: #a94442 solid 6px;
+}
+input:required:valid {
+    border-left: var(--success-text) solid 6px;
+}
+input[name="email"]:required:valid {
+    background-color: var(--success-background);
+}
+#formmessage {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+#submitmessage {
+    font-weight: 700;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.success {
+    margin-top: 5px;
+    padding: 15px;
+    background-color: var(--success-background);
+    border-color: var(--success-border);
+    color: var(--success-text);
+}
+.error {
+    margin-top: 5px;
+    padding: 15px;
+    background-color: var(--error-background);
+    border-color: var(--error-border);
+    color: var(--error-text);
+}
+.show {
+    display: flex;
+}
+.hide {
+    display: none;
+}
+
+#rating {
+    width: 230px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+#rangevalue {
+    display: block;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: 0.25rem;
+    color: #555;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-size: 0.8rem;
+    max-width: 1.5rem;
+    text-align: center;
+}
+#rangevalues {
+    display: flex;
+    width: 250px;
+}
+#rangevalues option {
+    flex: 1 1 auto;
+}
+/*----------- Record.html - Form conformation page --------------*/
+
+#record .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--success-background);
+    border-color: var(--success-border);
+    color: var(--success-text);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#record h1 {
+    font-family: var(--heading-font);
+    text-align: center;
+}
+#record p {
+    font-family: var(--paragraph-font);
+    text-align: center;
+}
+#record a {
+    align-self: center;
+}
+
+.homeBtn {
+    font-family: var(--heading-font);
+    background-color: var(--success-text);
+    color: var(--success-background);
+    padding: 0.75rem 1.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+.homeBtn:hover {
+    font-family: var(--heading-font);
+    background-color: white;
+    color: var(--success-text);
+    cursor: pointer;
+}
