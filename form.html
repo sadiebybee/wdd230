@@ -40,7 +40,7 @@
                 <label>Email* <input type="email" id="email" name="email" placeholder="someone@byui.edu" pattern="[a-zA-Z0-9_.\-]+@byui.edu" title="Please enter a valid email address" required></label>
                 <label>Page Rating</label>
                 <div id="rangevalue">1</div>
-                <input type="range" id="rating" name="rating" min="1" max="10" value="1" step="1" list="rangevalues" />
+                <label><input type="range" id="rating" name="rating" min="1" max="10" value="1" step="1" list="rangevalues" /></label>
                 <datalist id="rangevalues">
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -52,7 +52,8 @@
                     <option value="8">8</option>
                     <option value="9">9</option>
                     <option value="10">10</option>
-                </datalist>            </fieldset>
+                </datalist>
+            </fieldset>
             <div id="submitmessage" class="hide" role="alert"></div>
             <input class="submitBtn" type="submit" onclick="validateForm(event)" value="Submit Applicant Request" />
         </form>
