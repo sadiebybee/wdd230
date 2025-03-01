@@ -391,7 +391,6 @@ footer {
     background-color: var(--accent3-color);
     color: var(--accent2-color);
     font-family: var(--heading-font);
-    font-size: 1.3rem;
     cursor: pointer;
 }
 input:required {
