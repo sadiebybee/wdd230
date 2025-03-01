@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmington Chamber Of Commerce</title>
+    <meta name="description" content="Farmington Chamber Home Page">
+    <meta name="author" content="Sadie Bybee">
+    <link rel="icon" href="favicon.ico">
+    <!--Meta Tags-->
+    <meta property="og:title" content="Chamber Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sadiebybee.github.io/wdd230/images/handsicon.webp">
+    <meta property="og:url" content="https://sadiebybee.github.io/wdd230/">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <div id="headertitle">
+            <img id="headerpicture" src="images/handsicon.webp" alt="picture" >
+            <h1>Farmington Chamber of Commerce</h1>
+            <div id="menu"></div>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+        <div id="dark">🕶️</div>
+    </header>
+    <main>
+        <div class="form-wrapper">
+            <form method="get" action="thankyou.html" class="form-section">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label>First Name:* <input type="text" id="fname" name="fname" required /></label>
+                    <label>Last Name:* <input type="text" id="lname" name="lname" required /></label>
+                    <label>Position:* <input type="text" id="position" name="position" pattern="[a-zA-Z\- ]{7,}" required></label>
+                    <label>Email:* <input type="email" id="email" name="email" placeholder="someone@gmail.com" required></label>
+                    <label>Phone:* <input type="tel" id="phone" name="phone" placeholder="1235551234" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label>Business/Organization's Name:* <input type="text" id="bname" name="bname" required></label>
+                    <label>Membership Level:</label>
+                    <select name="membership">
+                        <option value="">Please Select</option>
+                        <option value="nonprofit">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                    <label>Business/Organization's Description:<textarea name="description" id="description"></textarea></label>
+                </fieldset>
+                <div id="submitmessage" class="hide" role="alert"></div>
+                <button class="submitbtn" type="submit" onclick="validateForm(event)">Submit My Application</button>
+                <input type="hidden" name="timestampmilli" id="timestampmilli" />
+            </form>
+            <div class="column2">
+                <section class="memberships">
+                    <h2>Membership Levels</h2>
+                    <div class="membership-container">
+                        <div class="membership">
+                            <h3 class="np">Non Profit</h3>
+                            <div>
+                                <p><strong>Cost:</strong> For non profit organizations and there is no fee.</p>
+                                <p>
+                                    <strong>
+                                        Benefits:
+                                    </strong>
+                                    In the non-profit membership package, you will receive access to basic resources and information,
+                                    you will receive a subscription to newsletters or updates, and you will receive an invitation
+                                    to general events or meetings.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="membership">
+                            <h3 class="bronze">Bronze Membership</h3>
+                            <div>
+                                <p>
+                                    <strong>Cost:</strong>
+                                    Slightly higher than the non-profit level.
+                                </p>
+                                <p>
+                                    <strong>
+                                        Benefits:
+                                    </strong>
+                                    In the bronze membership package, you will receive all benefits of the non-profit level,
+                                    additional access to certain training sessions and workshops, recognition on the 
+                                    organization's website and publications, and discounted rates for specific events and 
+                                    services.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="membership">
+                            <h3 class="silver">Silver Membership</h3>
+                            <div>
+                                <p>
+                                    <strong>Cost:</strong>
+                                    Slightly higher than the bronze level.
+                                </p>
+                                <p>
+                                    <strong>Benefits:</strong>
+                                    In the silver membership package, you will receive all benefits of the bronze and
+                                    non-profit memberships, priority registration for events and workshops, featured
+                                    spotlight positions on the organization's website and social media, and enhanced
+                                    networking opportunites, such as exclusive meet-and-greets.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="membership">
+                            <h3 class="gold">Gold Membership</h3>
+                            <div>
+                                <p>
+                                    <strong>
+                                        Cost:
+                                    </strong>
+                                    Slightly higher than the silver membership
+                                </p>
+                                <p>
+                                    <strong>
+                                        Benefits:
+                                    </strong>
+                                    In the gold membership package, you will receive all benefits from all other membership packages,
+                                    exclusive access to VIP events and private networking sessions, personalized advertising
+                                    opportunites, such as dedicated email blasts or sponsored content, and special recognition
+                                    at major events and in organizational materials.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>    
+        </div>
+    </main>
+    <footer>
+        <div class="footer-title">
+            <h2>Farmington Chamber of Commerce</h2>
+        </div>
+        <div class="contact">
+            <h3>Contact Us: <a href="https://www.facebook.com/" target="_blank">Facebook</a> | <a href="https://x.com/?lang=en" target="_blank">Twitter</a> | <a href="#">Email</a></h3>
+        </div>
+
+        <div class="legal">
+            <span><span id="cYear">&copy;</span> Farmington Chamber of Commerce | Sadie Bybee | WDD 230 Project</span>
+        </div>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>
