@@ -453,3 +453,43 @@ input:required:valid {
 .gold {
     background-color: var(--secondary-color);
 }
+
+/*----------- Thankyou.html - Form conformation page --------------*/
+
+.thanks-container {
+    justify-content: center;
+    text-align: center;
+    max-width: 700px;
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+    margin: 200px auto;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px var(--accent1-color);
+}
+
+h1 {
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
+.thanks-container p {
+    font-family: var(--paragraph-font);
+    text-align: center;
+    color: var(--main-text-color);
+    margin-bottom: 30px;
+}
+
+.homeBtn {
+    font-family: var(--heading-font);
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+    padding: .7rem;
+    border-radius: 7px;
+    text-decoration: none;
+}
+  
+.homeBtn:hover {
+    font-family: var(--heading-font);
+    background-color: var(--accent3-color);
+}
