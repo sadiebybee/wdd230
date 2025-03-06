@@ -1,0 +1,45 @@
+{
+  "wardInformation": {
+    "familyName": "Smith",
+    "movedInDate": "2024-11-12",
+    "numberOfPeople": "7",
+    "visitedByBishopric": "true",
+    "familyMembers": [
+      {
+        "name": "Bryce Smith",
+        "gender": "Male",
+        "birthdate": "1974-03-05"
+      },
+      {
+        "name": "Amy Smith",
+        "gender": "Female",
+        "birthdate": "1975-04-06"
+      },
+      {
+        "name": "Sadie Smith",
+        "gender": "Female",
+        "birthdate": "2000-06-20"
+      },
+      {
+        "name": "Abby Smith",
+        "gender": "Female",
+        "birthdate": "2001-12-07"
+      },
+      {
+        "name": "Ethan Smith",
+        "gender": "Male",
+        "birthdate": "2004-04-21"
+      },
+      {
+        "name": "Jessica Smith",
+        "gender": "Female",
+        "birthdate": "2010-02-24"
+      },
+      {
+        "name": "Makayla Smith",
+        "gender": "Female",
+        "birthdate": "2012-04-19"
+      }
+    ]
+  }
+}
