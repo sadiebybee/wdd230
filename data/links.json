@@ -1,0 +1,134 @@
+{
+    "lessons" : [
+        {
+            "lesson" : "01",
+            "links" : [
+                {
+                    "url" : "lesson01/holygrail.html",
+                    "title" : "Holy Grail Grid"
+                },
+                {
+                    "url" : "https://codepen.io/sadiebybee/pen/dPbmJqd",
+                    "title" : "Applied JavaScript"
+                }
+            ]
+        },
+        {
+            "lesson" : "02",
+            "links" : [
+                {
+                    "url" : "lesson02/design.html",
+                    "title" : "Web Design Principles"
+                },
+                {
+                    "url" : "lesson02/design-principles.html",
+                    "title" : "Design Principles Document"
+                },
+                {
+                    "url" : "lesson02/media-query.html",
+                    "title" : "Media Query Example"
+                }
+            ]
+        },
+        {
+            "lesson" : "03",
+            "links" : [
+                {
+                    "url" : "lesson03/images/combinators.png",
+                    "title" : "CSS Combinators"
+                },
+                {
+                    "url" : "https://codepen.io/sadiebybee/pen/yLmOXjw?editors=1100",
+                    "title" : "Pseudo Elements"
+                },
+                {
+                    "url" : "https://codepen.io/sadiebybee/pen/bGXpWPR",
+                    "title" : "Responsive Hamburger Menu"
+                }
+            ]
+        },
+        {
+            "lesson" : "04",
+            "links" : [
+                {
+                    "url" : "https://codepen.io/sadiebybee/pen/OJKbgQN",
+                    "title" : "Pseudo Classes"
+                }
+            ]
+        },
+        {
+            "lesson" : "05",
+            "links" : [
+                {
+                    "url" : "lesson05/bom.html",
+                    "title" : "Boom of Mormon - Top 10"
+                }
+            ]
+        },
+        {
+            "lesson" : "06",
+            "links" : [
+                {
+                    "url" : "lesson06/images/landscape.webp",
+                    "title" : "Landscape Image Webp"
+                },
+                {
+                    "url" : "lesson06/responsive-images.html",
+                    "title" : "Responsive Images"
+                }
+            ]
+        },
+        {
+            "lesson" : "07",
+            "links" : [
+                {
+                    "url" : "lesson07/lazyload.html",
+                    "title" : "Lazy Loading"
+                },
+                {
+                    "url" : "lesson07/bom.html",
+                    "title" : "Book of Mormon Part 2"
+                }
+            ]
+        },
+        {
+            "lesson" : "08",
+            "links" : [
+                {
+                    "url" : "lesson08/tablebuild.html",
+                    "title" : "Table Build"
+                },
+                {
+                    "url" : "lesson08/Form-start/index.html",
+                    "title" : "Form Start Practice"
+                },
+                {
+                    "url" : "form.html",
+                    "title" : "Home Page Form"
+                }
+            ]
+        },
+        {
+            "lesson" : "09",
+            "links" : [
+                {
+                    "url" : "lesson09/new-ward-members.json",
+                    "title" : "New Ward Members Json"
+                },
+                {
+                    "url" : "lesson09/prophets.html",
+                    "title" : "Fetch API Prophets"
+                }
+            ]
+        },
+        {
+            "lesson" : "10",
+            "links" : [
+                {
+                    "url" : "",
+                    "title" : ""
+                }
+            ]
+        }
+    ]
+}
