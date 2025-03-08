@@ -143,12 +143,8 @@
         grid-gap: 5px;
         align-items: center;
     }
-    h6 {
-        margin-bottom: 0;
-        grid-column: 3;
-        color: #e7ad99;
-    }
 }
+
 
 /*********Thank YOU***********/
 @media only screen and (min-width: 768px) {
