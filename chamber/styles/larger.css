@@ -136,13 +136,17 @@
 }
 
 /********Directory Page**********/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1020px) {
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 5px;
         align-items: center;
-    }    
+    }
+    h6 {
+        margin-bottom: 0;
+        grid-column: 3;
+    }
 }
 
 /*********Thank YOU***********/
