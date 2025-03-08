@@ -62,6 +62,7 @@ header {
 	top: 1rem;
 	right: 1rem;
     background: none;
+    cursor: pointer;
 }
     
 #menu::before {
