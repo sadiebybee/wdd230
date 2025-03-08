@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmington Chamber Of Commerce Directory</title>
+    <meta name="description" content="Farmington Chamber Directory Page">
+    <meta name="author" content="Sadie Bybee">
+    <link rel="icon" href="favicon.ico">
+    <!--Meta Tags-->
+    <meta property="og:title" content="Directory Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sadiebybee.github.io/wdd230/images/handsicon.webp">
+    <meta property="og:url" content="https://sadiebybee.github.io/wdd230/">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <div id="headertitle">
+            <img id="headerpicture" src="images/handsicon.webp" alt="picture" >
+            <h1>Farmington Chamber of Commerce</h1>
+            <div id="menu"></div>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+        <div id="dark">🕶️</div>
+    </header>
+    <main>
+        <!--Hero Content-->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Farmington Directory</h2>
+                <p>Join our beautiful community and become a member!</p>
+                <a href="join.html">Join Us</a>
+            </div>
+        </section>
+        <section>
+            <section id="directory">
+                <h2>Directory of Business Members</h2>
+                <div class="menu">
+                    <button id="gridBtn">Grid</button>
+                    <button id="listBtn">List</button>
+                </div>
+                <article id="members" class="grid"></article>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-title">
+            <h2>Farmington Chamber of Commerce</h2>
+        </div>
+        <div class="contact">
+            <h3>Contact Us: <a href="https://www.facebook.com/" target="_blank">Facebook</a> | <a href="https://x.com/?lang=en" target="_blank">Twitter</a> | <a href="#">Email</a></h3>
+        </div>
+
+        <div class="legal">
+            <span><span id="cYear">&copy;</span> Farmington Chamber of Commerce | Sadie Bybee | WDD 230 Project</span>
+        </div>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/members.js"></script>
+</body>
+</html>

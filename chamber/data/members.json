@@ -1,0 +1,112 @@
+{
+    "members" : [
+        {
+            "company" : "Amazon",
+            "address" : "410 Terry Ave N",
+            "city": "Seattle",
+            "state": "Washington",
+            "zip": "98109",
+            "phone" : "(206)266-1000",
+            "email" : "",
+            "website" : "amazon.com",
+            "image" : "https://sadiebybee.github.io/wdd230/chamber/images/biz-logos/amazonlogo.jpg",
+            "membership" : "Gold"
+        },
+        {
+            "company": "Hello Fresh",
+            "address": "1234 Main St",
+            "city": "Avondale",
+            "state": "AZ",
+            "zip": "85043",
+            "phone": "623-555-7999",
+            "email": "",
+            "website": "hellofresh.com",
+            "image": "https://sadiebybee.github.io/wdd230/chamber/images/biz-logos/hellofresh.png",
+            "membership": "Silver"
+        },
+        {
+            "company": "Sub-Zero",
+            "address": "4295 N Cotton Ln",
+            "city": "Goodyear",
+            "state": "AZ",
+            "zip": "85395",
+            "phone": "623-240-4300",
+            "email": "",
+            "website": "www.subzero-wolf.com",
+            "image": "https://sadiebybee.github.io/wdd230/chamber/images/biz-logos/subzero.png",
+            "membership": "Bronze"
+        },
+        {
+            "company": "Whirlpool Corporation",
+            "address": "2000 N. M-63",
+            "city": "Benton Harbor",
+            "state": "MI",
+            "zip": "49022-2692",
+            "phone": "1(866)698-2538",
+            "email": "whirlpool_customerexperience@whirlpool.com",
+            "website": "www.whirlpoolcorp.com",
+            "image": "https://sadiebybee.github.io/wdd230/chamber/images/biz-logos/whirlpool.png",
+            "membership": "Bronze"
+        },
+        {
+            "company": "Alibaba Group",
+            "address": "525 Almanor Ave",
+            "city": "Sunnyvale",
+            "state": "CA",
+            "zip": "94085",
+            "phone": "",
+            "email": "lianzheng@alibaba-inc.com",
+            "website": "www.alibabagroup.com",
+            "image": "https://sadiebybee.github.io/wdd230/chamber/images/biz-logos/alibaba.png",
+            "membership": "Silver"
+        },
+        {
+            "company": "Digital Silk",
+            "address": "18 W 18th St",
+            "city": "New York",
+            "state": "NY",
+            "zip": "10011",
+            "phone": "(800)206-9413",
+            "email": "",
+            "website": "www.digitalsilk.com",
+            "image": "https://sadiebybee.github.io/wdd230/chamber/images/biz-logos/digitalsilk.jpeg",
+            "membership": "Gold"
+        },
+        {
+            "company": "Huemor",
+            "address": "420 Perry Highway",
+            "city": "Pittsburgh",
+            "state": "PA",
+            "zip": "15229",
+            "phone": "631-393-6116",
+            "email": "sayhi@huemor.rocks",
+            "website": "www.huemor.rocks.com",
+            "image": "https://sadiebybee.github.io/wdd230/chamber/images/biz-logos/huemor.jpeg",
+            "membership": "Gold"
+        },
+        {
+            "company": "Wells Fargo Bank",
+            "address": "420 Montgomery Street",
+            "city": "San Francisco",
+            "state": "CA",
+            "zip": "94163",
+            "phone": "1-866-878-5865",
+            "email": "",
+            "website": "www.wellsfargo.com",
+            "image": "https://sadiebybee.github.io/wdd230/chamber/images/biz-logos/wellsfargo.png",
+            "membership": "Silver"
+        },
+        {
+            "company": "Raytheon Technologies",
+            "address": "1100 Wilson Blvd",
+            "city": "Arlington",
+            "state": "VA",
+            "zip": "22209",
+            "phone": "(781) 522-3000",
+            "email": "corporatepr@rtx.com",
+            "website": "www.rtx.com",
+            "image": "https://sadiebybee.github.io/wdd230/chamber/images/biz-logos/raytheon.png",
+            "membership": "Bronze"
+        }
+    ]
+}
