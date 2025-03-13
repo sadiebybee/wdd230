@@ -199,6 +199,35 @@ main {
     border: 1px solid var(--accent2-color);
 }
 
+.weather-card {
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid var(--accent2-color);
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #666;
+
+
+}
+.weather {
+    text-align: center;
+    padding: 20px;
+}
+
+.weather h4 {
+    font-family: var(--heading-font);
+}
+
+#current-temp {
+    font-family: var(--paragraph-font);
+}
+
+#feels-like {
+    font-family: var(--paragraph-font);
+}
+
+#wind-speed {
+    font-family: var(--paragraph-font);
+}
 
 /* *** Footer ************************************ */
 footer {

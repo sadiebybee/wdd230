@@ -33,7 +33,31 @@
         margin: 5px;
         box-shadow: 6px 6px 10px #666;
     }
+    /************WEATHER***************/
+    .weather {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .weather h4 {
+        font-size: 1rem;
+    }
+
+    .current-temp {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    #days {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #days img {
+        width: 100px;
+    }    
 }
+
 
 /*********Discover Page Large*********/
 @media only screen and (min-width: 768px) {
