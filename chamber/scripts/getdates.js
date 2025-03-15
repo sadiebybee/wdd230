@@ -79,3 +79,22 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("timestampmilli").value = Date.now();
     }
 });
+
+// *********** Banner **********
+
+function isBannerDay() {
+    const today = new Date().getDay();
+    return [1, 2, 3].includes(today);
+  }
+  
+  function closeBanner() {
+    const banner = document.getElementById("announcementBanner");
+    banner.style.display = "none";
+  }
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    if (isBannerDay === 1 || isBannerDay === 2 || isBannerDay === 3) {
+        const banner = document.getElementById("announcementBanner");
+        banner.style.display = "flex";
+      }      
+  });
