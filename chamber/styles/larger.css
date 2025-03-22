@@ -81,7 +81,6 @@
         font-family: var(--heading-font);
         font-size: 3em;
         font-weight: 800;
-        color: var(--accent3-color);
         margin: 30px;
     }
     .hero-content1 p {
