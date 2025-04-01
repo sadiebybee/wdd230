@@ -21,11 +21,12 @@
     />
     <meta property="og:url" content="https://sadiebybee.github.io/wdd230/" />
 
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base.css" />
   </head>
   <body>
     <header>
-      <div class="headerTitle">
+      <div id="headerTitle">
+        <img id="headerpicture" src="images/scoots-logo.jpg" alt="picture">
         <h1>Scoots Rentals</h1>
         <div id="menu"></div>
       </div>
@@ -39,23 +40,37 @@
       </nav>
     </header>
     <main>
-        <div class="close-messg"></div>
-        <!--CALL TO ACTION
+      <div id="announcementBanner" class="announcement-banner">
+        <div>
+          <h3>Today's Weather:</h3>
+          <h4 id="todayWeather"></h4>
+        </div>
+        <button class="close-button" onclick="closeBanner()">Close</button>
+      </div>
+      <!--CALL TO ACTION
         A call to action to make a rental reservation.-->
-        <div class="hero">
-            <h2></h2>
-            <p></p>
-            <a href="reservations.html" class="button">Click Here To Make A Reservation</a>  
-        </div>
-        <!--SUMMARY INFORMATION
+      <div class="hero">
+        <h3>Skip the crowds—ride, explore, and escape with Scoots!</h3>
+        <a href="reservations.html" class="button">Make a Reservation</a>
+      </div>
+      <!--SUMMARY INFORMATION
         Summary information about all the types of rentals.-->
-        <div class="summary">
-            <div class="scooters"></div>
-            <div class="atvs"></div>
-            <div class="jeep"></div>    
-        </div>
+      <div class="summary">
+        <p>
+            Welcome to Scoots, your go-to motor scooter rental in Cozumel!
+            Whether you're a local, a cruise traveler, or just visiting,
+            we make it easy to rent a scooter, jeep, or ATV and explore the
+            island on your terms. With two convenient locations near the
+            ferry dock and cruise terminal, we offer a hassle-free way to
+            discover Cozumel's hidden beaches, scenic coastlines, and
+            off-the-beaten-path adventures.
+        </p>
+        <div class="scooters"></div>
+        <div class="atvs"></div>
+        <div class="jeep"></div>
+      </div>
 
-        <!--WEATHER SECTION
+      <!--WEATHER SECTION
         Weather information from the free version of openweathermap.org. Here is the minimum information to include on the page:
         ✔️ The current temperature
         ✔️ The current humidity
@@ -64,12 +79,11 @@
         There may likely only be one data point under weather but your code should display any and all if provided by the API.
         Include a closeable message at the very top of the page that provides the high temperature temp-max for the current day.-->
 
-        <div class="weather">
-            <div class="current-temp"></div>
-            <div class="humidity"></div>
-            <div class="next-day"></div>
-        </div>
-
+      <div class="weather">
+        <div class="current-temp"></div>
+        <div class="humidity"></div>
+        <div class="next-day"></div>
+      </div>
     </main>
     <footer>
       <div class="footer-title">

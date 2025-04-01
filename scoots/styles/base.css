@@ -1,2 +1,147 @@
 @import url('https://fonts.googleapis.com/css2?family=Knewave&family=Radley:ital@0;1&display=swap');
 
+:root{
+    --head-font: "Knewave", sans-serif;
+    --body-font: "Radley", serif;
+
+    --primary-color: #a8dadc;
+    --secondary-color: #457b9d;
+    --accent-color: #e63946;
+    --light-color: #f1faee;
+    --dark-color: #1d3557;
+
+    --main-text-color: black;
+    --secondary-text-color: white;
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+/* Header and Navigation */
+
+#headerpicture {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+header {
+    font-family: var(--head-font);
+    text-align: center;
+    font-size: 2rem;
+}
+
+#headerTitle {
+    color: var(--dark-color);
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    padding: 15px;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu {
+	color: var(--dark-color);
+	position: absolute;
+	top: 1rem;
+	right: 1.5rem;
+    cursor: pointer;
+}
+    
+#menu::before {
+    font-size: 2rem;
+	content: "☰";
+}
+
+#menu.open::before {
+    font-size: 2rem;
+	content: "🆇";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    margin: 0;
+    padding: 15px;
+    background-color: var(--primary-color);
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation li a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.open li {
+    display: block;
+}
+
+.open li a {
+    display: block;
+}
+
+nav a {
+    color: var(--dark-color);
+    font-size: 1.5rem;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+}
+
+/* Main Section */
+
+/* Call To Action */
+
+.hero {
+    background-color: var(--secondary-color);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 5px;
+}
+
+.footer-title {
+    color: var(--light-color);
+    text-align: center;
+    font-size: .8rem;
+}
+
+.contact {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: .8rem;
+}
+
+.contact a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.contact a:hover {
+    color: var(--accent-color);
+}
+
+.legal {
+    color: var(--light-color);
+    text-align: center;
+    font-size: .8rem;
+}
