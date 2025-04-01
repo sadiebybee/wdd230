@@ -1,45 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Scoots Final Project</title>
-    <meta name="description" content="WDD 230 - Web Frontend Development, Sadie Bybee, Final Project, Scoots">
-    <meta name="author" content="Sadie Bybee">
+    <meta
+      name="description"
+      content="WDD 230 - Web Frontend Development, Sadie Bybee, Final Project, Scoots"
+    />
+    <meta name="author" content="Sadie Bybee" />
 
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Sadie Bybee WDD 230 - Web Frontend Development" />
-    <meta property="og:image" content="https://sadiebybee.github.io/wdd230/images/farmington.webp/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Sadie Bybee WDD 230 - Web Frontend Development"
+    />
+    <meta
+      property="og:image"
+      content="https://sadiebybee.github.io/wdd230/images/farmington.webp/"
+    />
     <meta property="og:url" content="https://sadiebybee.github.io/wdd230/" />
-
-
-
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="headerTitle">
-            <h1>Scoots</h1>
-            <div id="menu"></div>
-        </div>
-        <nav>
-            <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="rentals.html">Rentals</a></li>
-                <li><a href="reservations.html">reservations</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+      <div class="headerTitle">
+        <h1>Scoots Rental Company</h1>
+        <div id="menu"></div>
+      </div>
+      <nav>
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rentals.html">Rentals</a></li>
+          <li><a href="reservations.html">reservations</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
+        <div class="close-messg"></div>
+        <!--CALL TO ACTION
+        A call to action to make a rental reservation.-->
+        <div class="hero"></div>
+        <!--SUMMARY INFORMATION
+        Summary information about all the types of rentals.-->
+        <div class="summary">
+            <div class="scooters"></div>
+            <div class="atvs"></div>
+            <div class="jeep"></div>    
+        </div>
+
+        <!--WEATHER SECTION
+        Weather information from the free version of openweathermap.org. Here is the minimum information to include on the page:
+        ✔️ The current temperature
+        ✔️ The current humidity
+        ✔️ The next day's forecasted temperature at 15:00 (3:00pm).
+        ✔️ All the weather data points provided including the main (which is the title, e.g., "Clouds"), the description, and the associated weather icon.
+        There may likely only be one data point under weather but your code should display any and all if provided by the API.
+        Include a closeable message at the very top of the page that provides the high temperature temp-max for the current day.-->
+
+        <div class="weather">
+            <div class="current-temp"></div>
+            <div class="humidity"></div>
+            <div class="next-day"></div>
+        </div>
 
     </main>
     <footer>
-        <div class="footer-info">
-            <div class="copyright">
-                <p><span id="cYear"></span> Scoots | Sadie Bybee | WDD230 Final Project</p>
-            </div>
-        </div>
-
+      <div class="footer-title">
+        <h2>Scoots Rental Company</h2>
+      </div>
+      <div class="contact">
+        <h3>
+          Contact Us:
+          <a href="https://www.facebook.com/" target="_blank">Facebook</a> |
+          <a href="https://x.com/?lang=en" target="_blank">Twitter</a> |
+          <a href="#">Email</a>
+        </h3>
+      </div>
+      <div class="legal">
+        <span
+          ><span id="cYear">&copy;</span> Scoots Rental Company | Sadie Bybee |
+          WDD 230 Final Project</span
+        >
+      </div>
+      <p id="lastModified"></p>
     </footer>
-</body>
+  </body>
 </html>
