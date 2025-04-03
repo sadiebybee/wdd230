@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scoots Final Project</title>
+    <meta
+      name="description"
+      content="WDD 230 - Web Frontend Development, Sadie Bybee, Final Project, Scoots"
+    />
+    <meta name="author" content="Sadie Bybee" />
+    <link rel="stylesheet" href="favicon.ico" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Sadie Bybee WDD 230 - Web Frontend Development"
+    />
+    <meta
+      property="og:image"
+      content="https://sadiebybee.github.io/wdd230/images/farmington.webp/"
+    />
+    <meta property="og:url" content="https://sadiebybee.github.io/wdd230/" />
+
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+  </head>
+  <body>
+    <header>
+        <div id="headerTitle">
+          <img id="headerpicture" src="images/scoots-logo.webp" alt="logo" />
+          <h1>Scoots Rentals</h1>
+          <div id="menu"></div>
+        </div>
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">reservations</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <form method="get" action="thankyou.html" class="form-section">
+            <fieldset>
+                <legend>We'd love to connect with you!<legend>
+                    <label>First Name:* <input type="text" id="fname" name="fname" required /></label>
+                    <label>Last Name:* <input type="text" id="lname" name="lname" required /></label>
+                    <label>Email:* <input type="email" id="email" name="email" placeholder="someone@gmail.com" required></label>
+                    <label>Please leave a comment:<textarea name="comment" id="comment"></textarea></label>
+            </fieldset>
+            <div id="submitmessage" class="hide" role="alert"></div>
+            <button class="submitbtn" type="submit" onclick="validateForm(event)">Submit My Information</button>
+            <input type="hidden" name="timestampmilli" id="timestampmilli" />
+        </form>
+        <div class="contactInfo">
+            <h3>Please contact us!</h3>
+            <p>Phone Number: 888-234-5678</p>
+            <p>Email: scootsrentals@gmail.com</p>
+            <p>Website: www.scootsrentals.com</p>
+            <h3>Business Hours:</h3>
+            <p>Mon - Sat: 8:00AM - 7:00PM</p>
+            <p>Sun: Closed</p>
+        </div>
+
+        <!-- One is near the Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel
+         and the other is near the Terminal Puerta Maya further south along the coast
+         which caters to the cruise lines and patrons.
+        -->
+        <h3>Locations:</h3>
+        <div class="map1">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.896231434844!2d-86.94785072804454!3d20.51015993345396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e596a57998f2f%3A0x872264a71df73bc2!2sScooter%20rental%20cozumel%20and%20cars%2C%20%22DAVIS%20RENTAL%22!5e0!3m2!1sen!2sus!4v1743719872781!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="map2">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.744427306838!2d-86.97750968255619!3d20.475687600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cd70625421%3A0xb1974a1818657af2!2sCozumel%20Cruise%20Terminal!5e0!3m2!1sen!2sus!4v1743719686604!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </main>
+      <footer>
+        <div class="footer-title">
+          <h2>Scoots Rental Company</h2>
+        </div>
+        <div class="contact">
+          <h3>
+            Contact Us:
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a> |
+            <a href="https://x.com/?lang=en" target="_blank">Twitter</a> |
+            <a href="#">Email</a>
+          </h3>
+        </div>
+        <div class="legal">
+          <span
+            ><span id="cYear">&copy;</span> Scoots Rental Company | Sadie Bybee |
+            WDD 230 Final Project</span
+          >
+        </div>
+        <p id="lastModified"></p>
+      </footer>
+      <script src="scripts/main.js"></script>  
+    </body>
+    
