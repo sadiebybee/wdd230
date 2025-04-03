@@ -27,7 +27,7 @@
   <body>
     <header>
       <div id="headerTitle">
-        <img id="headerpicture" src="images/scoots-logo.jpg" alt="picture" />
+        <img id="headerpicture" src="images/scoots-logo.webp" alt="logo" />
         <h1>Scoots Rentals</h1>
         <div id="menu"></div>
       </div>
@@ -42,19 +42,18 @@
     </header>
     <main>
       <!-- Announcement Banner  -->
-      <div id="announcementBanner" class="announcement-banner">
-        <div>
-          <h3>Today's Weather -</h3>
+      <div id="announcementBanner">
+        <h2>Today's Weather -</h2>
+        <div class="announcement-banner">
           <figure>
             <img id="weather-icon" src="#" alt="" />
             <figcaption></figcaption>
           </figure>
-
           <h4>The current temperature: <span id="current-temp"></span></h4>
           <h4>Todays low temperature: <span id="temp-min"></span></h4>
           <h4>Todays high temperature: <span id="temp-max"></span></h4>
+          <button class="close-button" onclick="closeBanner()">Close</button>
         </div>
-        <button class="close-button" onclick="closeBanner()">Close</button>
       </div>
 
       <!--CALL TO ACTION
