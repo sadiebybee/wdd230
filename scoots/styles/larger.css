@@ -1,0 +1,21 @@
+/* Larger Views ******************************/
+@media only screen and (min-width: 768px) {
+    #menu {
+        display: none;
+    }
+
+    #headerTitle {
+        font-size: 3rem;
+    }
+
+    .navigation {
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+}
