@@ -33,7 +33,7 @@ header {
     
 }
 
-#headerTitle img {
+#headerpicture {
     width: 100px;
     height: auto;
     border-radius: 50%;
@@ -98,11 +98,17 @@ header {
 
 nav a {
     text-align: center;
-    color: var(--accent2-color);
+    color: var(--light-color);
     text-decoration: none;
 }
 
 /* Main Section */
+
+/* Banner Section */
+
+.announcement-banner {
+    border: 1px solid;
+}
 
 /* Call To Action */
 

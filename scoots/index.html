@@ -9,8 +9,7 @@
       content="WDD 230 - Web Frontend Development, Sadie Bybee, Final Project, Scoots"
     />
     <meta name="author" content="Sadie Bybee" />
-    <link rel="stylesheet" href="favicon.ico">
-
+    <link rel="stylesheet" href="favicon.ico" />
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
@@ -23,12 +22,12 @@
     <meta property="og:url" content="https://sadiebybee.github.io/wdd230/" />
 
     <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/larger.css" />
   </head>
   <body>
     <header>
       <div id="headerTitle">
-        <img id="headerpicture" src="images/scoots-logo.jpg" alt="picture">
+        <img id="headerpicture" src="images/scoots-logo.jpg" alt="picture" />
         <h1>Scoots Rentals</h1>
         <div id="menu"></div>
       </div>
@@ -42,30 +41,39 @@
       </nav>
     </header>
     <main>
+      <!-- Announcement Banner  -->
       <div id="announcementBanner" class="announcement-banner">
         <div>
-          <h3>Today's Weather:</h3>
-          <h4 id="todayWeather"></h4>
+          <h3>Today's Weather -</h3>
+          <figure>
+            <img id="weather-icon" src="#" alt="" />
+            <figcaption></figcaption>
+          </figure>
+
+          <h4>The current temperature: <span id="current-temp"></span></h4>
+          <h4>Todays low temperature: <span id="temp-min"></span></h4>
+          <h4>Todays high temperature: <span id="temp-max"></span></h4>
         </div>
         <button class="close-button" onclick="closeBanner()">Close</button>
       </div>
+
       <!--CALL TO ACTION
         A call to action to make a rental reservation.-->
       <div class="hero">
         <h3>Skip the crowds—ride, explore, and escape with Scoots!</h3>
         <a href="reservations.html" class="button">Make a Reservation</a>
       </div>
+
       <!--SUMMARY INFORMATION
         Summary information about all the types of rentals.-->
       <div class="summary">
         <p>
-            Welcome to Scoots, your go-to motor scooter rental in Cozumel!
-            Whether you're a local, a cruise traveler, or just visiting,
-            we make it easy to rent a scooter, jeep, or ATV and explore the
-            island on your terms. With two convenient locations near the
-            ferry dock and cruise terminal, we offer a hassle-free way to
-            discover Cozumel's hidden beaches, scenic coastlines, and
-            off-the-beaten-path adventures.
+          Welcome to Scoots, your go-to motor scooter rental in Cozumel! Whether
+          you're a local, a cruise traveler, or just visiting, we make it easy
+          to rent a scooter, jeep, or ATV and explore the island on your terms.
+          With two convenient locations near the ferry dock and cruise terminal,
+          we offer a hassle-free way to discover Cozumel's hidden beaches,
+          scenic coastlines, and off-the-beaten-path adventures.
         </p>
         <div class="scooters"></div>
         <div class="atvs"></div>
