@@ -1,0 +1,76 @@
+<!-- rental agreement information, and
+a valid form that collects rental details such as the date, period, rental type, number, phone number, name, email, home state or country, cruise line if applicable, and
+special accommodations/comments such as the need and location of a drop-off request.
+Use CSS Grid and/or CSS Flex to design the layout. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservations Page</title>
+    <meta
+      name="description"
+      content="WDD 230 - Web Frontend Development, Sadie Bybee, Final Project, Scoots"
+    />
+    <meta name="author" content="Sadie Bybee" />
+    <link rel="stylesheet" href="favicon.ico" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Sadie Bybee WDD 230 - Web Frontend Development"
+    />
+    <meta
+      property="og:image"
+      content="https://sadiebybee.github.io/wdd230/images/farmington.webp/"
+    />
+    <meta property="og:url" content="https://sadiebybee.github.io/wdd230/" />
+
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+  </head>
+  <body>
+    <header>
+      <div id="headerTitle">
+        <img id="headerpicture" src="images/scoots-logo.webp" alt="logo" />
+        <h1>Scoots Rentals</h1>
+        <div id="menu"></div>
+      </div>
+      <nav>
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rentals.html">Rentals</a></li>
+          <li><a href="reservations.html">reservations</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <div class="form-wrapper">
+            <form method="get" action="reserved.html" class="reservation-form">
+                
+            </form>
+        </div>
+    </main>
+    <footer>
+      <div class="footer-title">
+        <h2>Scoots Rental Company</h2>
+      </div>
+      <div class="contact">
+        <h3>
+          Contact Us:
+          <a href="https://www.facebook.com/" target="_blank">Facebook</a> |
+          <a href="https://x.com/?lang=en" target="_blank">Twitter</a> |
+          <a href="#">Email</a>
+        </h3>
+      </div>
+      <div class="legal">
+        <span
+          ><span id="cYear">&copy;</span> Scoots Rental Company | Sadie Bybee |
+          WDD 230 Final Project</span
+        >
+      </div>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
