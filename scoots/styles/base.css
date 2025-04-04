@@ -329,3 +329,42 @@ input:required:valid {
   height: 450px;
   border-radius: 10px;
 }
+
+/* ********** Thank You******** */
+.thanks {
+    justify-content: center;
+    text-align: center;
+    max-width: 700px;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    margin: 200px auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px var(--accent1-color);
+}
+
+h1 {
+    font-family: var(--head-font);
+    text-align: center;
+    color: var(--dark-color);
+}
+
+.thanks p {
+    text-align: center;
+    color: var(--main-text-color);
+    margin-bottom: 30px;
+}
+
+.homeBtn {
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    box-shadow: 2px 2px 3px 2px;
+}
+  
+.homeBtn:hover {
+    font-size: 1.2rem;
+}
