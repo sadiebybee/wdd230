@@ -381,7 +381,8 @@ h1 {
 }
 
 .form-wrapper h1 {
-  background-color: var(--accent-color);
+  background-color: var(--dark-color);
+  color: var(--light-color);
   padding: 20px;
   margin: 0 5px;
 }
@@ -431,7 +432,10 @@ h1 {
 
 .terms h2 {
   font-family: var(--head-font);
-  color: var(--dark-color);
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  padding: 20px 0;
+  margin: 0;
 }
 
 .terms ul {
