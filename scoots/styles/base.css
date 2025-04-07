@@ -223,7 +223,7 @@ footer {
 
 .contact-page h1 {
   color: var(--light-color);
-  background-color: var(--secondary-color);
+  background-color: var(--dark-color);
   margin: 0;
   padding: 20px;
 }
@@ -286,7 +286,7 @@ input:required:valid {
 .contactInfo h3 {
   font-family: var(--head-font);
   font-size: 1.7rem;
-  background-color: var(--secondary-color);
+  background-color: var(--dark-color);
   color: var(--light-color);
   margin: 0;
   padding: 20px;
@@ -301,8 +301,7 @@ input:required:valid {
   text-align: center;
   font-size: 1.7rem;
   font-family: var(--head-font);
-  color: var(--dark-color);
-  background-color: var(--secondary-color);
+  background-color: var(--dark-color);
   color: var(--light-color);
   padding: 20px;
 }
