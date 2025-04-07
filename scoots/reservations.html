@@ -47,9 +47,68 @@ Use CSS Grid and/or CSS Flex to design the layout. -->
     </header>
     <main>
         <div class="form-wrapper">
+          <h1>Book Your Ride!</h1>
             <form method="get" action="reserved.html" class="reservation-form">
-                
+                <fieldset>
+                  <legend>Renter's Information</legend>
+                  <label>First Name:* <input type="text" id="fname" name="fname" required /></label>
+                  <label>Last Name:* <input type="text" id="lname" name="lname" required /></label>
+                  <label>Email:* <input type="email" id="email" name="email" placeholder="someone@gmail.com" required></label>
+                  <label>Phone:* <input type="tel" id="phone" name="phone" placeholder="1235551234" required></label>
+                  <label>State or Country:* <input type="text" id="place" name="place" required></label>
+                  <label>Driver's License Number:* <input type="text" id="license" name="license" required></label>
+                </fieldset>
+                <fieldset>
+                  <legend>Vehicle Information</legend>
+                  <label>Vehicle:*</label>
+                  <select name="vehicle" id="vehicle" required>
+                    <option value="">Please Select</option>
+                    <option value="Metro">Honda Metro Scooter</option>
+                    <option value="Dio">Honda Dio Scooter</option>
+                    <option value="PCX150">Honda PCX150 Scooter</option>
+                    <option value="Pioneer">Honda Pioneer ATV</option>
+                    <option value="4Door">Jeep Wrangler - 4 door with a/c</option>
+                    <option value="2Door">Jeep Wrangler - 2 door</option>
+                  </select>
+                  <label>Date:* <input type="datetime" id="date" name="date" placeholder="Jan 1, 2025" required></label>
+                  <label>Available Times:*</label>
+                  <select name="time" id="time" required>
+                    <option value="">Select Time Period:</option>
+                    <option value="eight">8AM - 10AM</option>
+                    <option value="ten">10AM - 12AM</option>
+                    <option value="twelve">12AM - 2AM</option>
+                    <option value="two">2AM - 4PM</option>
+                    <option value="four">4PM - 6PM</option>
+                    <option value="six">6PM - 8PM</option>
+                    <option value="last">8PM - 10PM</option>
+                  </select>
+                  <label>Payment Method:*</label>
+                  <select name="payment" id="payment" required>
+                    <option value="">Please Select</option>
+                    <option value="cash">Cash</option>
+                    <option value="credit">Credit Card</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <label>Crusie Line Name: <input type="text" id="cruiseline" name="cruiseline" placeholder="Only if applicable"></label>
+                </fieldset>
+                <div id="submitmessage" class="hide" role="alert"></div>
+                <button class="submitbtn" type="submit" onclick="validateForm(event)">Confrim Reservation</button>
+                <input type="hidden" name="timestampmilli" id="timestampmilli" />
             </form>
+        </div>
+        <div class="terms">
+          <h2>Terms and Conditions:</h2>
+          <ul>
+            <li>Renter must be at least 18 years old.</li>
+            <li>Valid driver's license required for ATVs and Jeeps.</li>
+            <li>Helmets required for scooters and ATVs.</li>
+            <li>No racing, reckless driving, or stunts.</li>
+            <li>No operation under the influence of drugs/alcohol.</li>
+            <li>No subleasing or unauthorized drivers.</li>
+            <li>Renter must inspect the vehicle and report damage before departure.</li>
+            <li>Any damage incurred during the rental is the Renter's responsibility.</li>
+            <li>Vehicle must be returned on time, clean, and refueled.</li>
+          </ul>
         </div>
     </main>
     <footer>
