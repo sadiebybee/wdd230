@@ -371,3 +371,71 @@ h1 {
 .homeBtn:hover {
     font-size: 1.2rem;
 }
+
+/* ******Reservations******** */
+
+.form-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+
+.form-wrapper h1 {
+  background-color: var(--accent-color);
+  padding: 20px;
+  margin: 0 5px;
+}
+
+.reservation-form {
+  margin: 10px;
+  padding: 10px;
+}
+
+.reservation-form fieldset {
+  border: 2px solid var(--dark-color);
+  border-radius: 10px;
+  padding: 15px 5%;
+  text-align: left;
+
+}
+
+.reservation-form legend {
+  color: var(--dark-color);
+  font-family: var(--head-font);
+  font-size: 1.3rem;
+  margin: 0 10px;
+  padding: 0 5px;
+}
+
+.reservation-form label {
+  display: block;
+  padding: 8px 0;
+  font-family: var(--head-font);
+  font-size: 1.1rem;
+  color: var(--dark-color);
+}
+
+.reservation-form input {
+  margin: 3px;
+  padding: 2px;
+}
+
+.reservation-form .submitbtn {
+  margin: 20px 0;
+}
+
+.terms {
+  border-top: 2px solid var(--dark-color);
+  margin-bottom: 5px;
+}
+
+.terms h2 {
+  font-family: var(--head-font);
+  color: var(--dark-color);
+}
+
+.terms ul {
+  text-align: left;
+  color: var(--dark-color);
+  font-size: 1.1rem;
+}
