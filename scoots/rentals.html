@@ -47,31 +47,83 @@ Store this .json file in a data 📁 folder in this project folder.
 Incorporate a data table in your HTML structure to display some portion of this information. -->
       <div class="rental-wrapper">
         <h1>Ready to Ride? Your Adventure Starts Here!</h1>
+        <div class="rentalInfo">
+            <h2>Available Rental Options:</h2>
+            <ul>
+                <li><strong>Honda Motor Scooters</strong>
+                    <ul>
+                        <li>Honda Metropolitan (49cc) - 1 person
+                            <img src="images/metropolitan.webp" alt="metropolitan">
+                        </li>
+                        <li>Honda Dio (110cc) - 2 person
+                            <img src="images/honda-dio.webp" alt="Dio">
+                        </li>
+                        <li>Honda PCX150 (149cc) - 2 person
+                            <img src="images/PCX150.webp" alt="PCX150">
+                        </li>
+                    </ul>
+                </li>
+                <li><strong>Side-by-Side ATVs</strong>
+                    <ul>
+                        <li>Honda Pioneer 1000 - 4 person
+                            <img src="images/Honda Pioneer 1000.webp" alt="Pioneer">
+                        </li>
+                    </ul>
+                </li>
+                <li><strong>Jeeps</strong>
+                    <ul>
+                        <li>Jeep Wrangler - 4 door manuel with A/C - 5 person
+                            <img src="images/Jeep Wrangler - 4 door.webp" alt="Wrangler4">
+                        </li>
+                        <li>Jeep Wrangler - 2 door - open air - manuel - 4 person
+                            <img src="images/Jeep Wrangler - 2 door.webp" alt="Wrangler2">
+                        </li>
+                    </ul>
+                </li>
 
-        <table>
-          <caption>
-            Table 1: Max Rental Pricing
-          </caption>
-          <thead>
-            <tr>
-              <th colspan="6">Rental Pricing</th>
-            </tr>
-            <tr>
-              <th colspan="4"></th>
-              <th>Reservation</th>
-              <th>Walk-in</th>
-            </tr>
-            <tr>
-              <th>Rental Type</th>
-              <th>Max. Persons</th>
-              <th>Half Day (3hrs)</th>
-              <th>Full Day</th>
-              <th>Half Day (3hrs)</th>
-              <th>Full Day</th>
-            </tr>
-          </thead>
-          <tbody id="rentalData"></tbody>
-        </table>
+            </ul>
+        </div>
+        <section>
+          <table>
+            <caption>
+              Table 1: Max Rental Pricing
+            </caption>
+            <thead>
+              <tr>
+                <th colspan="6">Rental Pricing</th>
+              </tr>
+              <tr>
+                <th colspan="4"></th>
+                <th>Reservation</th>
+                <th>Walk-in</th>
+              </tr>
+              <tr>
+                <th>Rental Type</th>
+                <th>Max. Persons</th>
+                <th>Half Day (3hrs)</th>
+                <th>Full Day</th>
+                <th>Half Day (3hrs)</th>
+                <th>Full Day</th>
+              </tr>
+            </thead>
+            <tbody id="rentalData"></tbody>
+          </table>
+        </section>
+        <div class="rentalAgreement">
+            <h2>Rental Services and Agreements:</h2>
+            <ul>
+              <li>A $50 security deposit is required to confirm reservations.</li>
+              <li>A valid drivers license is required in hand at the time of rental.</li>
+              <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+              <li>Fuel charge is not included.</li>
+              <li>Unlimited mileage.</li>
+              <li>Liability insurance is included.</li>
+              <li>Damage insurance is available for purchase.</li>
+              <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+              <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+              <li>Rentals may be returned to either physical location.</li>
+            </ul>  
+        </div>
       </div>
     </main>
     <footer>

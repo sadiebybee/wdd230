@@ -450,6 +450,36 @@ h1 {
   padding: 20px;
 }
 
+.rentalInfo h2 {
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+  font-family: var(--head-font);
+  font-size: 1.7rem;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+.rentalInfo ul strong{
+  font-size: 1.5rem;
+}
+
+.rentalInfo ul {
+  font-size: 1.3rem;
+  margin: 10px 0;
+  list-style: none;
+}
+
+.rentalInfo ul li ul li {
+  list-style: disc;
+}
+
+.rentalInfo ul li img {
+  width: 350px;
+  height: auto;
+  margin: 10px 0;
+}
+
 table {
   padding: 10px 0;
   border: thin solid var(--dark-color);
@@ -491,3 +521,16 @@ td {
 text-align: center;
 }
 
+.rentalAgreement h2{
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+  padding: 20px;
+  font-family: var(--head-font);
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.rentalAgreement ul li{
+  font-size: 1.3rem;
+  padding: 5px 0;
+}
