@@ -46,6 +46,7 @@
     position: absolute;
     background-color: var(--secondary-color);
     margin: 25%;
+    border: 3px solid var(--light-color);
   }
 
   .hero-content1 h2 {
