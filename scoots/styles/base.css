@@ -442,3 +442,51 @@ h1 {
   color: var(--dark-color);
   font-size: 1.1rem;
 }
+
+/* ******Rental Page******* */
+.rental-wrapper h1{
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  padding: 20px;
+}
+
+table {
+  padding: 10px 0;
+  border: thin solid var(--dark-color);
+  box-shadow: 0 0 10px var(--dark-color);
+  border-collapse: collapse;
+}
+
+caption {
+  caption-side: bottom;
+  color: var(--dark-color);
+  font-size: 1rem;
+  margin: 10px;
+}
+
+tr:first-child th {
+background-color: var(--primary-color);
+color: var(--dark-color);
+padding: 20px 0;
+font-family: var(--head-font);
+font-size: 1.7rem;
+}
+
+tr:nth-child(2) th:first-child {
+  background-color: #fff;
+}
+
+th, td {
+border: 1px solid var(--dark-color);
+}
+
+th {
+background-color: var(--secondary-color);
+color: var(--light-color);
+font-size: larger;
+}
+
+td {
+text-align: center;
+}
+
