@@ -74,7 +74,7 @@ header {
   display: block;
   padding: 1rem;
   text-decoration: none;
-  margin: 5px;
+  padding: 5px;
 }
 
 .navigation li a:hover {
@@ -166,7 +166,7 @@ nav a {
   position: relative;
   background-color: var(--secondary-color);
   padding: 20px;
-  margin: 10px 20px;
+  padding: 10px 20px;
   text-align: center;
   border-radius: 10px;
 }
@@ -189,7 +189,7 @@ nav a {
   color: var(--main-text-color);
   font-weight: 500;
   font-size: 1rem;
-  margin: 5px;
+  padding: 5px;
   padding: 8px;
   box-shadow: 2px 2px 1px 1px var(--dark-color);
   border-radius: 10px;
@@ -201,24 +201,47 @@ nav a {
 footer {
   background-color: var(--dark-color);
   color: var(--light-color);
-  padding: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  gap: 10px;
+
 }
 
 .footer-title {
   color: var(--light-color);
+  font-family: var(--head-font);
+  font-size: 1rem;
   text-align: center;
+  grid-column: 1/5;
+}
+
+.bussiness {
   font-size: 0.8rem;
+  grid-column: 2;
+  padding: 0 0 0 50%;
+}
+
+.bussiness h3 {
+  font-size: 1rem;
+  font-family: var(--head-font);
 }
 
 .contact {
-  text-align: center;
-  color: var(--primary-color);
   font-size: 0.8rem;
+  grid-column: 3;
+  padding: 0 0 0 20%;
+
+
+}
+
+.contact h3 {
+  font-size: 1rem;
+  font-family: var(--head-font);
 }
 
 .contact a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--light-color);
 }
 
 .contact a:hover {
@@ -226,9 +249,10 @@ footer {
 }
 
 .legal {
-  color: var(--light-color);
+  color: var(--accent-color);
   text-align: center;
   font-size: 0.8rem;
+  grid-column: 1/5;
 }
 
 /* CONTACT PAGE  */
@@ -239,13 +263,13 @@ footer {
   text-align: center;
   font-family: var(--head-font);
   color: var(--dark-color);
-  margin: 10px;
+  padding: 10px;
 }
 
 .contact-page h1 {
   color: var(--light-color);
   background-color: var(--dark-color);
-  margin: 0;
+  padding: 0;
   padding: 20px;
 }
 
@@ -257,14 +281,14 @@ footer {
 .form-section fieldset {
   border: none;
   border-radius: 10px;
-  margin: 20px auto;
+  padding: 20px auto;
   padding: 0.5rem 5%;
 }
 
 .form-section legend {
   color: var(--dark-color);
   font-size: 1.7rem;
-  margin: 5px;
+  padding: 5px;
 }
 
 .form-section label {
@@ -309,7 +333,7 @@ input:required:valid {
   font-size: 1.7rem;
   background-color: var(--dark-color);
   color: var(--light-color);
-  margin: 0;
+  padding: 0;
   padding: 20px;
 }
 
@@ -360,7 +384,7 @@ input:required:valid {
     max-width: 700px;
     background-color: var(--primary-color);
     color: var(--accent2-color);
-    margin: 200px auto;
+    padding: 200px auto;
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 0 20px var(--accent1-color);
@@ -404,11 +428,11 @@ h1 {
   background-color: var(--dark-color);
   color: var(--light-color);
   padding: 20px;
-  margin: 0 5px;
+  padding: 0 5px;
 }
 
 .reservation-form {
-  margin: 10px;
+  padding: 10px;
   padding: 10px;
 }
 
@@ -424,7 +448,7 @@ h1 {
   color: var(--dark-color);
   font-family: var(--head-font);
   font-size: 1.3rem;
-  margin: 0 10px;
+  padding: 0 10px;
   padding: 0 5px;
 }
 
@@ -437,12 +461,12 @@ h1 {
 }
 
 .reservation-form input {
-  margin: 3px;
+  padding: 3px;
   padding: 2px;
 }
 
 .reservation-form .submitbtn {
-  margin: 20px 0;
+  padding: 20px 0;
 }
 
 .terms {
@@ -455,7 +479,7 @@ h1 {
   background-color: var(--dark-color);
   color: var(--light-color);
   padding: 20px 0;
-  margin: 0;
+  padding: 0;
 }
 
 .terms ul {
@@ -478,7 +502,7 @@ h1 {
   font-size: 1.7rem;
   text-align: center;
   padding: 20px;
-  margin: 0;
+  padding: 0;
 }
 
 .rentalInfo ul strong{
@@ -487,7 +511,7 @@ h1 {
 
 .rentalInfo ul {
   font-size: 1.3rem;
-  margin: 10px 0;
+  padding: 10px 0;
   list-style: none;
 }
 
@@ -498,7 +522,7 @@ h1 {
 .rentalInfo ul li img {
   width: 300px;
   height: auto;
-  margin: 10px 0;
+  padding: 10px 0;
 }
 
 table {
@@ -512,7 +536,7 @@ caption {
   caption-side: bottom;
   color: var(--dark-color);
   font-size: 1rem;
-  margin: 10px;
+  padding: 10px;
 }
 
 tr:first-child th {
