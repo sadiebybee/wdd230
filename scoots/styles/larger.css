@@ -18,7 +18,7 @@
   .navigation {
     flex-direction: row;
     margin: 0;
-    padding: 0;
+    padding: 15px;
   }
   .navigation li {
     display: block;
