@@ -59,6 +59,10 @@
     color: var(--accent2-color);
     font-size: 1.5em;
   }
+
+  .bussiness {
+    padding-left: 50%;
+  }
 }
 
 /******** Contact page **********/
