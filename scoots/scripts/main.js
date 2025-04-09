@@ -20,7 +20,6 @@ function closeBanner() {
 document.addEventListener("DOMContentLoaded", () => {
   const tableBody = document.getElementById("rentalData");
 
-  // Only run this if the rental table is present
   if (tableBody) {
     fetch("data/rentals.json")
       .then((response) => response.json())
