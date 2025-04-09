@@ -73,7 +73,7 @@ header {
   display: block;
   padding: 1rem;
   text-decoration: none;
-  padding: 5px;
+  margin-right: 10%;
 }
 
 .navigation li a:hover {
@@ -301,7 +301,8 @@ footer {
   background-color: var(--dark-color);
   color: var(--light-color);
   font-size: 1.2rem;
-  padding: 15px;
+  margin: 20px;
+  padding: 20px;
   border-radius: 10px;
   font-family: var(--head-font);
 }
@@ -460,8 +461,8 @@ h1 {
   padding: 2px;
 }
 
-.reservation-form .submitbtn {
-  padding: 20px 0;
+.reservation-form button {
+  padding: 20px;
 }
 
 .terms {
@@ -505,6 +506,7 @@ h1 {
   font-size: 1.3rem;
   padding: 10px 0;
   list-style: none;
+  margin-left: 8%;
 }
 
 .rentalInfo ul li img {
