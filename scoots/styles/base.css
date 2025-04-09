@@ -16,59 +16,48 @@
 body {
   font-family: var(--body-font);
 }
-header {
+
+header h1{
   background-color: var(--primary-color);
   font-family: var(--head-font);
   color: var(--dark-color);
+  margin: 0;
+  padding: 50px;
+  text-align: left;
 }
 
-#headerTitle {
-  display: flex;
-  flex-direction: row;
-  padding: 20px;
-  justify-content: center;
-  align-items: center;
+header .navigation {
+  margin: 0;
+  padding: 0;
 }
 
-#headerTitle h1 {
-  margin: 10px 0 0 30px;
-  font-size: 3rem;
-}
-
-#rentalHeader{
-  font-size: 1.3rem;
-  text-align: center;
-}
-
-#headerpicture {
-  width: 100px;
+header img {
+  position: absolute;
+  top: 6%;
+  left: 75%;
+  width: 60px;
   height: auto;
-  border-radius: 50%;
-  margin-left: 15px;
 }
 
 /*********Nav***********/
 #menu {
-  border: 0;
+  position: absolute;
+  top: 0;
+  margin: 15px;
   color: var(--dark-color);
-  position: relative;
-  top: -3rem;
-  background: none;
 }
+
 #menu::before {
-  font-size: 2.5rem;
+  font-size: 2rem;
   content: "☰";
 }
 
 #menu.open::before {
-  font-size: 2.5rem;
+  font-size: 2rem;
   content: "🆇";
 }
 
 .navigation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   font-size: 1.5rem;
   list-style: none;
@@ -83,26 +72,19 @@ header {
   display: block;
   padding: 1rem;
   text-decoration: none;
-  margin-right: 10%;
 }
 
 .navigation li a:hover {
-  background-color: var(--accent-color);
-  border-radius: 10px;
+  text-decoration: underline;
 }
 
 .open li {
-  display: block;
+  display: flex;
   width: 100%;
 }
 .open li a {
-  display: block;
-}
-
-nav a {
-  text-align: center;
+  display: flex;
   color: var(--light-color);
-  text-decoration: none;
 }
 
 /* Main Section */
@@ -114,7 +96,6 @@ nav a {
 #announcementBanner {
   background-color: var(--light-color);
   border: 6px solid var(--secondary-color);
-  border-radius: 20px;
   display: grid;
   grid-template-columns: 1fr;
   text-align: center;
@@ -131,10 +112,6 @@ nav a {
   border-bottom: 1px solid var(--main-text-color);
 }
 
-.announcement-banner {
-  background-color: var(--light-color);
-  border-radius: 0 0 15px 15px;
-}
 
 .announcementContent figure img {
   width: 150px;
@@ -147,7 +124,6 @@ nav a {
   color: var(--light-color);
   box-shadow: 3px 3px 2px var(--dark-color);
   border: none;
-  border-radius: 5px;
   font-size: 1.3rem;
   margin: 0 20%;
   padding: 5px;
@@ -172,17 +148,16 @@ nav a {
 
 .hero-content1 {
   position: relative;
-  background-color: var(--secondary-color);
-  padding: 20px;
+  background-color: var(--primary-color);
+  border: 2px solid var(--secondary-color);
   padding: 10px 20px;
   text-align: center;
-  border-radius: 10px;
   padding: 30px;
 }
 
 .hero-content1 h2 {
   font-family: var(--head-font);
-  color: var(--light-color);
+  color: var(--dark-color);
   font-size: 2rem;
 }
 
@@ -194,13 +169,12 @@ nav a {
 
 .hero-content1 a {
   text-decoration: none;
-  background-color: var(--accent-color);
+  background-color: var(--secondary-color);
   color: var(--main-text-color);
   font-weight: 500;
   font-size: 1rem;
   padding: 8px;
   box-shadow: 2px 2px 1px 1px var(--dark-color);
-  border-radius: 10px;
 }
 
 .hero-content1 a:hover {
@@ -255,6 +229,7 @@ footer {
   font-size: 1.5rem;
   text-align: center;
   grid-column: 1/5;
+  border-bottom: 1px solid var(--light-color);
 }
 
 .bussiness {
@@ -300,22 +275,15 @@ footer {
 .contact-page {
   display: grid;
   grid-template-columns: 1fr;
-  text-align: center;
   font-family: var(--head-font);
-  color: var(--dark-color);
-  padding: 10px;
-}
-
-.contact-page h1 {
-  color: var(--light-color);
-  background-color: var(--dark-color);
-  padding: 0;
-  padding: 20px;
+  color: var(--main-text-color-color);
+  margin-top: 20px;
 }
 
 .form-section {
   padding: 20px;
   border: 2px solid;
+  text-align: center;
 }
 
 .form-section fieldset {
@@ -325,7 +293,6 @@ footer {
 }
 
 .form-section legend {
-  color: var(--dark-color);
   font-size: 1.7rem;
   padding: 5px;
 }
@@ -333,11 +300,13 @@ footer {
 .form-section label {
   display: block;
   padding-top: 20px;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
+  text-align: left;
 }
 
 .form-section input {
   font-family: var(--body-font);
+  padding: 3px;
 }
 
 .submitbtn {
@@ -363,58 +332,53 @@ input:required:valid {
 
 .contactInfo {
   text-align: center;
-  color: var(--dark-color);
   margin-top: 10px;
-  border: 2px solid;
 }
 
 .contactInfo h3 {
   font-family: var(--head-font);
   font-size: 1.7rem;
-  background-color: var(--dark-color);
-  color: var(--light-color);
   margin-top: 0;
-  padding: 20px;
+  border-bottom: 1px solid;
+  text-align: left;
 }
 
 .contactInfo p {
   font-size: 1.3rem;
   font-family: var(--body-font);
+  text-align: left;
+  padding-left: 15px;
 }
 
 #location h3 {
   text-align: center;
   font-size: 1.7rem;
+  text-align: left;
   font-family: var(--head-font);
-  background-color: var(--dark-color);
-  color: var(--light-color);
-  padding: 20px;
+  color: var(--main-text-color);
+  border-bottom: 1px solid;
 }
 
 .map1 {
   display: flex;
   border: 1px solid var(--dark-color);
-  border-radius: 10px;
   margin-bottom: 10px;
 }
 
 .map1 iframe {
   width: 100%;
   height: 450px;
-  border-radius: 10px;
 }
 
 .map2 {
   display: flex;
   border: 1px solid var(--dark-color);
-  border-radius: 10px;
   margin-bottom: 10px;
 }
 
 .map2 iframe {
   width: 100%;
   height: 450px;
-  border-radius: 10px;
 }
 
 /* ********** Thank You******** */
@@ -461,42 +425,33 @@ h1 {
   display: grid;
   grid-template-columns: 1fr;
   text-align: center;
-}
-
-.form-wrapper h1 {
-  background-color: var(--dark-color);
-  color: var(--light-color);
-  padding: 20px;
-  padding: 0 5px;
+  margin: 20px 0;
 }
 
 .reservation-form {
-  padding: 10px;
-  padding: 10px;
+  padding: 5px;
+  border: 2px solid var(--dark-color);
+
 }
 
 .reservation-form fieldset {
-  border: 2px solid var(--dark-color);
-  border-radius: 10px;
   padding: 15px 5%;
   text-align: left;
-
+  border: none;
 }
 
 .reservation-form legend {
-  color: var(--dark-color);
+  color: var(--main-text-color-color);
   font-family: var(--head-font);
-  font-size: 1.3rem;
-  padding: 0 10px;
-  padding: 0 5px;
+  font-size: 1.7rem;
 }
 
 .reservation-form label {
   display: block;
   padding: 8px 0;
   font-family: var(--head-font);
-  font-size: 1.1rem;
-  color: var(--dark-color);
+  font-size: 1.3rem;
+  color: var(--main-text-color-color);
 }
 
 .reservation-form input {
@@ -509,39 +464,33 @@ h1 {
 }
 
 .terms {
-  border-top: 2px solid var(--dark-color);
   margin-bottom: 5px;
 }
 
 .terms h2 {
   font-family: var(--head-font);
-  background-color: var(--dark-color);
-  color: var(--light-color);
+  color: var(--main-text-color-color);
+  border-bottom: 1px solid;
   padding: 20px 0;
   padding: 0;
 }
 
 .terms ul {
   text-align: left;
-  color: var(--dark-color);
+  color: var(--main-text-color-color);
   font-size: 1.1rem;
 }
 
 /* ******Rental Page******* */
-.rental-wrapper h1{
-  background-color: var(--dark-color);
-  color: var(--light-color);
-  padding: 20px;
-}
 
 .rentalInfo h2 {
   font-family: var(--head-font);
   border-bottom: 1px solid var(--main-text-color);
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 .rentalInfo ul strong{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: var(--head-font);
 }
 
