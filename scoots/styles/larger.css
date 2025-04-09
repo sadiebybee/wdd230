@@ -6,6 +6,17 @@
 
   #headerTitle {
     font-size: 3rem;
+    padding: 7%;
+  }
+
+  #headerTitle h1 {
+    font-size: 5rem;
+
+  }
+
+  #rentalHeader h2 {
+    font-size: 3.5rem;
+    margin: 0;
   }
 
   #headerpicture {
