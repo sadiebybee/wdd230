@@ -43,8 +43,8 @@
     <main>
       <!-- Announcement Banner  -->
       <div id="announcementBanner">
-        <h2>Today's Weather -</h2>
-        <div class="weather">
+        <h2>Today's Weather:</h2>
+        <div class="announcementContent">
           <figure>
             <img id="weather-icon" src="#" alt="" />
             <figcaption></figcaption>
@@ -52,8 +52,8 @@
           <h4>The current temperature: <span id="current-temp"></span></h4>
           <h4>Todays low temperature: <span id="temp-min"></span></h4>
           <h4>Todays high temperature: <span id="temp-max"></span></h4>
-          <button class="close-button" onclick="closeBanner()">Close</button>
         </div>
+        <button class="close-button" onclick="closeBanner()">Close</button>
       </div>
 
       <!--CALL TO ACTION
@@ -129,17 +129,11 @@
               <ul>
                 <li>
                   Jeep Wrangler - 4 door manuel with A/C - 5 person
-                  <img
-                    src="images/JeepWrangler-4door.webp"
-                    alt="Wrangler4"
-                  />
+                  <img src="images/JeepWrangler-4door.webp" alt="Wrangler4" />
                 </li>
                 <li>
                   Jeep Wrangler - 2 door - open air - manuel - 4 person
-                  <img
-                    src="images/JeepWrangler-2door.webp"
-                    alt="Wrangler2"
-                  />
+                  <img src="images/JeepWrangler-2door.webp" alt="Wrangler2" />
                 </li>
               </ul>
             </li>
@@ -154,11 +148,20 @@
       ✔️ All the weather data points provided including the main (which is the title, e.g., "Clouds"), the description, and the associated weather icon.
       There may likely only be one data point under weather but your code should display any and all if provided by the API.
       Include a closeable message at the very top of the page that provides the high temperature temp-max for the current day.-->
-      <div class="weather">
+      <!-- Weather Section at the Bottom -->
+      <div id="weather">
         <h1>Weather:</h1>
-        <h4>The current temperature: <span id="current-temp-bottom"></span></h4>
-        <h4>The current humidity: <span id="humidity"></span></h4>
-        <h4>Tomorrow's weather: <span id="tmr-temp"></span></h4>
+        <div class="weather">
+          <figure>
+            <img id="weather-icon-bottom" src="#" alt="weather icon" />
+            <figcaption id="weather-description-bottom"></figcaption>
+          </figure>
+          <h4>
+            The current temperature: <span id="current-temp-bottom"></span>
+          </h4>
+          <h4>The current humidity: <span id="humidity"></span></h4>
+          <h4>Tomorrow's weather: <span id="tmr-temp"></span></h4>
+        </div>
       </div>
     </main>
     <footer>

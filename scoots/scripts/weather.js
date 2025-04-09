@@ -40,23 +40,33 @@ async function apiFetch() {
 }
 
 function displayResults(data) {
-    const temp = `${data.main.temp.toFixed(0)}&deg;F`;
-    
-    currentTemp.innerHTML = temp;
-    currentTempBottom.innerHTML = temp;
+  const temp = `${data.main.temp.toFixed(0)}&deg;F`;
   
-    tempMin.innerHTML = `${data.main.temp_min.toFixed(0)}&deg;F`;
-    tempMax.innerHTML = `${data.main.temp_max.toFixed(0)}&deg;F`;
-    humidityEl.innerHTML = `${data.main.humidity}%`;
+  // Update both the top and bottom sections
+  currentTemp.innerHTML = temp;
+  currentTempBottom.innerHTML = temp;
+
+  tempMin.innerHTML = `${data.main.temp_min.toFixed(0)}&deg;F`;
+  tempMax.innerHTML = `${data.main.temp_max.toFixed(0)}&deg;F`;
+  humidityEl.innerHTML = `${data.main.humidity}%`;
+
+  const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+  let desc = data.weather[0].description;
+
+  // Update weather icon and description for both top and bottom
+  weatherIcon.setAttribute("src", iconsrc);
+  weatherIcon.setAttribute("alt", "weather icon");
+  captionDesc.textContent = desc;
+
+  // Update the bottom section
+  const weatherIconBottom = document.querySelector('#weather-icon-bottom');
+  const weatherDescriptionBottom = document.querySelector('#weather-description-bottom');
   
-    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    let desc = data.weather[0].description;
-  
-    weatherIcon.setAttribute("src", iconsrc);
-    weatherIcon.setAttribute("alt", "weather icon");
-    captionDesc.textContent = desc;
-  }
-  
+  weatherIconBottom.setAttribute("src", iconsrc);
+  weatherIconBottom.setAttribute("alt", "weather icon");
+  weatherDescriptionBottom.textContent = desc;
+}
+
 // Function to fetch forecast data and display tomorrow's temperature at 15:00
 async function fetchForecast() {
   try {
