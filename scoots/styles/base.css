@@ -207,7 +207,7 @@ footer {
 .footer-title {
   color: var(--light-color);
   font-family: var(--head-font);
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-align: center;
   grid-column: 1/5;
 }
@@ -329,7 +329,7 @@ input:required:valid {
   font-size: 1.7rem;
   background-color: var(--dark-color);
   color: var(--light-color);
-  padding: 0;
+  margin-top: 0;
   padding: 20px;
 }
 

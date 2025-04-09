@@ -171,8 +171,9 @@
   }
 
   .rentalInfo ul {
-    padding-left: 10px;
     text-align: center;
+    margin: 0;
+
   }
   .rentalInfo ul li img {
     display: block;
