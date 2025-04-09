@@ -286,7 +286,6 @@ footer {
 .form-section fieldset {
   border: none;
   border-radius: 10px;
-  padding: 20px auto;
   padding: 0.5rem 5%;
 }
 
@@ -385,15 +384,14 @@ input:required:valid {
 
 /* ********** Thank You******** */
 .thanks {
-    justify-content: center;
-    text-align: center;
-    max-width: 700px;
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-    padding: 200px auto;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px var(--accent1-color);
+  justify-content: center;
+  text-align: center;
+  max-width: 700px;
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px var(--accent1-color);
 }
 
 h1 {
