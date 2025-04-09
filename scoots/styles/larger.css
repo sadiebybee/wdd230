@@ -70,9 +70,7 @@
 
   .hero-content1 {
     position: absolute;
-    background-color: var(--light-color);
     margin: 25%;
-    border: 3px solid var(--light-color);
   }
 
   .hero-content1 h2 {
