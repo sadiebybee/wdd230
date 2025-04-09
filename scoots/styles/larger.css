@@ -110,8 +110,9 @@
     align-items: center;
   }
 
-  .weather h4 {
+  #weather h4 {
     padding: 0 50px;
+    font-size: 1.5rem;
   }
 }
 

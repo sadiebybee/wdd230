@@ -194,8 +194,6 @@ header img {
 
 /* Weather************ */
 #weather {
-  display: grid;
-  grid-template-columns: 1fr;
   text-align: center;
   margin: 15px 0;
 }
