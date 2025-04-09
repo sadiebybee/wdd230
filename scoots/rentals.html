@@ -48,46 +48,59 @@ Incorporate a data table in your HTML structure to display some portion of this 
       <div class="rental-wrapper">
         <h1>Ready to Ride? Your Adventure Starts Here!</h1>
         <div class="rentalInfo">
-            <h2>Available Rental Options:</h2>
-            <ul>
-                <li><strong>Honda Motor Scooters</strong>
-                    <ul>
-                        <li>Honda Metropolitan (49cc) - 1 person
-                            <img src="images/metropolitan.webp" alt="metropolitan">
-                        </li>
-                        <li>Honda Dio (110cc) - 2 person
-                            <img src="images/honda-dio.webp" alt="Dio">
-                        </li>
-                        <li>Honda PCX150 (149cc) - 2 person
-                            <img src="images/PCX150.webp" alt="PCX150">
-                        </li>
-                    </ul>
+          <h2>Available Rental Options:</h2>
+          <ul class="scooters">
+            <li>
+              <strong>Honda Motor Scooters</strong>
+              <ul>
+                <li>
+                  Honda Metropolitan (49cc) - 1 person
+                  <img src="images/metropolitan.webp" alt="metropolitan" />
                 </li>
-                <li><strong>Side-by-Side ATVs</strong>
-                    <ul>
-                        <li>Honda Pioneer 1000 - 4 person
-                            <img src="images/Honda Pioneer 1000.webp" alt="Pioneer">
-                        </li>
-                    </ul>
+                <li>
+                  Honda Dio (110cc) - 2 person
+                  <img src="images/honda-dio.webp" alt="Dio" />
                 </li>
-                <li><strong>Jeeps</strong>
-                    <ul>
-                        <li>Jeep Wrangler - 4 door manuel with A/C - 5 person
-                            <img src="images/Jeep Wrangler - 4 door.webp" alt="Wrangler4">
-                        </li>
-                        <li>Jeep Wrangler - 2 door - open air - manuel - 4 person
-                            <img src="images/Jeep Wrangler - 2 door.webp" alt="Wrangler2">
-                        </li>
-                    </ul>
+                <li>
+                  Honda PCX150 (149cc) - 2 person
+                  <img src="images/PCX150.webp" alt="PCX150" />
                 </li>
-
-            </ul>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <strong>Side-by-Side ATVs</strong>
+              <ul>
+                <li>
+                  Honda Pioneer 1000 - 4 person
+                  <img src="images/Honda Pioneer 1000.webp" alt="Pioneer" />
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Jeeps</strong>
+              <ul>
+                <li>
+                  Jeep Wrangler - 4 door manuel with A/C - 5 person
+                  <img
+                    src="images/Jeep Wrangler - 4 door.webp"
+                    alt="Wrangler4"
+                  />
+                </li>
+                <li>
+                  Jeep Wrangler - 2 door - open air - manuel - 4 person
+                  <img
+                    src="images/Jeep Wrangler - 2 door.webp"
+                    alt="Wrangler2"
+                  />
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
-        <section>
+        <section class="rental-info">
           <table>
-            <caption>
-              Table 1: Max Rental Pricing
-            </caption>
             <thead>
               <tr>
                 <th colspan="6">Rental Pricing</th>
@@ -108,52 +121,63 @@ Incorporate a data table in your HTML structure to display some portion of this 
             </thead>
             <tbody id="rentalData"></tbody>
           </table>
-        </section>
-        <div class="rentalAgreement">
+          <div class="rentalAgreement">
             <h2>Rental Services and Agreements:</h2>
             <ul>
-              <li>A $50 security deposit is required to confirm reservations.</li>
-              <li>A valid drivers license is required in hand at the time of rental.</li>
-              <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+              <li>
+                A $50 security deposit is required to confirm reservations.
+              </li>
+              <li>
+                A valid drivers license is required in hand at the time of
+                rental.
+              </li>
+              <li>
+                No one under the age of 12 years of age are allowed to ride on
+                the scooters.
+              </li>
               <li>Fuel charge is not included.</li>
               <li>Unlimited mileage.</li>
               <li>Liability insurance is included.</li>
               <li>Damage insurance is available for purchase.</li>
-              <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
-              <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+              <li>
+                Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.
+              </li>
+              <li>
+                Payment via Google Pay, Apple Pay, cash, credit card, debit
+                card, or venmo.
+              </li>
               <li>Rentals may be returned to either physical location.</li>
-            </ul>  
-        </div>
+            </ul>
+          </div>
+        </section>
       </div>
     </main>
     <footer>
-        <div class="footer-title">
-          <h2>Scoots Rental Company</h2>
-        </div>
-        <div class="bussiness">
-          <h3>Business Hours:</h3>
-          <p>Mon - Thur: 8:00AM - 8:00PM</p>
-          <p>Fri - Sat: 8:00Am - 10:00PM</p>
-          <p>Sun: Closed</p>
-        </div>
-        <div class="contact">
-          <h3>
-            Contact Us:
-          </h3>
-          <a href="https://www.facebook.com/" target="_blank">Facebook</a> |
-          <a href="https://x.com/?lang=en" target="_blank">Twitter</a>
-          <p>Phone Number: 888-234-5678</p>
-          <p>Email: scootsrentals@gmail.com</p>
-          <p>Website: www.scootsrentals.com</p>
-        </div>
-        <div class="legal">
-          <span
-            ><span id="cYear">&copy;</span> Scoots Rental Company | Sadie Bybee |
-            WDD 230 Final Project</span
-          >
-        </div>
-        <p id="lastModified"></p>
-      </footer>
-      <script src="scripts/main.js"></script>
+      <div class="footer-title">
+        <h2>Scoots Rental Company</h2>
+      </div>
+      <div class="bussiness">
+        <h3>Business Hours:</h3>
+        <p>Mon - Thur: 8:00AM - 8:00PM</p>
+        <p>Fri - Sat: 8:00Am - 10:00PM</p>
+        <p>Sun: Closed</p>
+      </div>
+      <div class="contact">
+        <h3>Contact Us:</h3>
+        <a href="https://www.facebook.com/" target="_blank">Facebook</a> |
+        <a href="https://x.com/?lang=en" target="_blank">Twitter</a>
+        <p>Phone Number: 888-234-5678</p>
+        <p>Email: scootsrentals@gmail.com</p>
+        <p>Website: www.scootsrentals.com</p>
+      </div>
+      <div class="legal">
+        <span
+          ><span id="cYear">&copy;</span> Scoots Rental Company | Sadie Bybee |
+          WDD 230 Final Project</span
+        >
+      </div>
+      <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/main.js"></script>
   </body>
 </html>

@@ -494,7 +494,6 @@ h1 {
   font-family: var(--head-font);
   border-bottom: 1px solid var(--main-text-color);
   font-size: 1.7rem;
-  text-align: center;
 }
 
 .rentalInfo ul strong{
@@ -560,7 +559,6 @@ text-align: center;
   border-bottom: 1px solid var(--main-text-color);
   font-family: var(--head-font);
   font-size: 1.7rem;
-  text-align: center;
 }
 
 .rentalAgreement ul li{
