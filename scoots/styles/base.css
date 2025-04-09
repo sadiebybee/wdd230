@@ -220,35 +220,20 @@ header img {
 footer {
   background-color: var(--dark-color);
   color: var(--light-color);
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 10px;
-
+  text-align: center;
 }
 
 .footer-title {
   color: var(--light-color);
   font-family: var(--head-font);
-  font-size: 1.5rem;
-  text-align: center;
-  grid-column: 1/5;
+  font-size: 1.2rem;
   border-bottom: 1px solid var(--light-color);
-}
-
-.bussiness {
-  font-size: 0.8rem;
-  grid-column: 2;
-}
-
-.bussiness h3 {
-  font-size: 1rem;
-  font-family: var(--head-font);
+  padding-left: 15px;
+  padding-top: 5px;
 }
 
 .contact {
   font-size: 0.8rem;
-  grid-column: 3;
-  padding-left: 20%;
 }
 
 .contact h3 {
@@ -262,15 +247,14 @@ footer {
 }
 
 .contact a:hover {
-  color: var(--primary-color);
+  text-decoration: underline;
 }
 
 .legal {
   color: var(--primary-color);
   text-align: center;
   font-size: 0.8rem;
-  grid-column: 1/5;
-  padding-left: 20px;
+  padding-bottom: 10px;
 }
 
 /* CONTACT PAGE  */

@@ -114,6 +114,20 @@
     padding: 0 50px;
   }
 }
+
+/* **********Footer********* */
+@media only screen and (min-width: 768px) {
+  .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .content h3, a, p {
+    padding: 0 40px;
+  }
+}
+
 /******** Contact page **********/
 
 @media only screen and (min-width: 768px) {
