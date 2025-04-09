@@ -253,7 +253,7 @@ footer {
 }
 
 .legal {
-  color: var(--accent-color);
+  color: var(--primary-color);
   text-align: center;
   font-size: 0.8rem;
   grid-column: 1/5;
