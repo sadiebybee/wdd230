@@ -66,6 +66,7 @@ header img {
   list-style: none;
   background-color: var(--secondary-color);
   color: var(--dark-color);
+  font-family: var(--head-font);
 }
 .navigation li {
   display: none;
@@ -367,8 +368,13 @@ input:required:valid {
 }
 
 /* ********** Thank You******** */
-.thanks {
+#thanks {
+  margin-top: 15%;
+  display: flex;
   justify-content: center;
+  align-items: center;
+}
+.thanks {
   text-align: center;
   max-width: 700px;
   background-color: var(--primary-color);
@@ -465,6 +471,9 @@ h1 {
   color: var(--main-text-color-color);
   font-size: 1.1rem;
 }
+
+/* *********Reserved******* */
+
 
 /* ******Rental Page******* */
 
