@@ -124,7 +124,7 @@ header img {
 .close-button {
   font-family: var(--head-font);
   background-color: var(--secondary-color);
-  color: var(--light-color);
+  color: var(--main-text--color);
   box-shadow: 3px 3px 2px var(--dark-color);
   border: none;
   font-size: 1.3rem;
